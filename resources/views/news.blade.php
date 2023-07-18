@@ -49,8 +49,8 @@
                         class="absolute left-0 top-0 w-full h-full  z-0 object-cover rounded-xl">
                     <div class="p-4 absolute bottom-0 left-0 z-20">
                         <span
-                            class="px-4 py-1 bg-black text-gray-200 inline-flex items-center justify-center mb-2">{{ $firstLatest->category->title }}</span>
-                        <h2 class="text-4xl font-semibold text-gray-100 leading-tight">
+                            class="px-4 py-1 bg-firefly-800  text-gray-200 inline-flex items-center justify-center mb-2">{{ $firstLatest->category->title }}</span>
+                        <h2 class="text-4xl font-semibold dark:text-firefly-300/80  text-white   leading-tight">
                             {{ $firstLatest->title }}
                         </h2>
                         <div class="flex mt-3">
@@ -74,8 +74,8 @@
                         class="absolute left-0 top-0 w-full h-full  z-0 object-cover rounded-xl">
                     <div class="p-4 absolute bottom-0 left-0 z-20">
                         <span
-                            class="px-4 py-1 bg-black text-gray-200 inline-flex items-center justify-center mb-2">{{ $secondLatest->category->title }}</span>
-                        <h2 class="text-4xl font-semibold text-gray-100 leading-tight">
+                            class="px-4 py-1 bg-firefly-800  text-gray-200 inline-flex items-center justify-center mb-2">{{ $secondLatest->category->title }}</span>
+                        <h2 class="text-4xl font-semibold dark:text-firefly-300/90  text-white   leading-snug">
                             {{ $secondLatest->title }}
                         </h2>
                         <div class="flex mt-3">

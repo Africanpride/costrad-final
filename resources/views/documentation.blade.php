@@ -13,7 +13,7 @@
             </button>
 
             <div id="hs-overlay-right"
-                class="hs-overlay hs-overlay-open:translate-x-0 hidden translate-x-full fixed top-0 right-0 transition-all duration-300 transform h-full max-w-xs w-full w-full z-[60] bg-white border-l dark:bg-gray-800 dark:border-gray-700 hidden"
+                class="hs-overlay hs-overlay-open:translate-x-0  translate-x-full fixed top-0 right-0 transition-all duration-300 transform h-full max-w-xs w-full w-full z-[60] bg-white border-l dark:bg-gray-800 dark:border-gray-700 hidden"
                 tabindex="-1">
                 <div class="flex justify-between items-center py-3 px-4 border-b dark:border-gray-700">
                     <h3 class="font-bold text-gray-800 dark:text-white">

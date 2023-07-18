@@ -14,12 +14,26 @@ class InstituteController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function enrollments()
+    {
+        if (Gate::denies('isAdmin')) {
+
+            return response('Access Denied!', 404);
+        } else {
+
+            $institutes = institute::with('participants')->get();
+
+            return view('admin.institutes.enrollments', compact('institutes'));
+
+            // $institutes = Institute::paginate(9);
+            // return view('admin.institutes.index', compact('institutes'));
+        }
+    }
     public function prep()
     {
         if (Gate::denies('isAdmin')) {
 
-            return response('Access Denied!', 404) ;
-
+            return response('Access Denied!', 404);
         } else {
 
             $institutes = institute::all();
@@ -29,20 +43,17 @@ class InstituteController extends Controller
             // $institutes = Institute::paginate(9);
             // return view('admin.institutes.index', compact('institutes'));
         }
-
     }
     public function index()
     {
         if (Gate::denies('isAdmin')) {
 
-            return response('Access Denied!', 404) ;
-
+            return response('Access Denied!', 404);
         } else {
 
             $institutes = Institute::paginate(9);
             return view('admin.institutes.index', compact('institutes'));
         }
-
     }
 
     /**

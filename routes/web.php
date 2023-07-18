@@ -161,6 +161,7 @@ Route::middleware(['auth', 'banned', 'mustBeAdmin', config('jetstream.auth_sessi
         return view('admin/participants/index', compact('participants'));
     })->name('admin.participants');
 
+    Route::get('institute/enrollments', [InstituteController::class, 'enrollments'])->name('enrollments');
     Route::get('institute/prep', [InstituteController::class, 'prep'])->name('institute.prep');
     Route::resource('institutes', InstituteController::class);
     Route::resource('transactions', TransactionController::class);

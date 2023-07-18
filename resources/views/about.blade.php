@@ -88,7 +88,66 @@
 
     </section>
 
+    <section class="max-w-8xl p-4 md:p-8 md:pr-10 mx-auto">
 
+        <!-- Clients -->
+        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+            <!-- Title -->
+            <div class="sm:w-1/2 xl:w-2/3 mx-auto text-center mb-6">
+                <h2 class="text-xl font-semibold md:text-4xl md:leading-tight text-gray-800 dark:text-gray-200">
+                    Educating Transformational Leaders For All Sectors of Society.</h2>
+            </div>
+            <!-- End Title -->
+
+            <!-- Grid -->
+            <div class="my-8 md:my-16 grid grid-cols-3 sm:flex sm:justify-center gap-4 sm:gap-x-6 lg:gap-x-10">
+
+                @foreach (App\Models\Institute::all() as $institute)
+                    <a class="flex-shrink-0 transition hover:-translate-y-1" href="{{ $institute->frontend_url }}">
+                        <img class="w-24" src="{{ $institute->institute_logo }}" alt="{{ $institute->name }}">
+                    </a>
+                @endforeach
+
+
+            </div>
+            <!-- End Grid -->
+
+            <!-- Grid -->
+            <div class="grid grid-cols-12 sm:flex sm:justify-center gap-6 sm:gap-x-12 lg:gap-x-20">
+                <div class="col-span-6 text-center">
+                    <h4 class="text-xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200">
+                        250+
+                    </h4>
+                    <h4 class="text-sm text-gray-600 dark:text-gray-400">
+                        Components
+                    </h4>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-span-6 text-center">
+                    <h4 class="text-xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200">
+                        160+
+                    </h4>
+                    <h4 class="text-sm text-gray-600 dark:text-gray-400">
+                        Starter Pages & Examples
+                    </h4>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-start-4 col-span-6 text-center">
+                    <h4 class="text-xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200">
+                        10+
+                    </h4>
+                    <h4 class="text-sm text-gray-600 dark:text-gray-400">
+                        Tailwind CSS Plugins
+                    </h4>
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Grid -->
+        </div>
+        <!-- End Clients -->
+    </section>
 
     <!-- agenda -->
     <div class="max-w-[85rem] w-full px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-firefly-100 dark:bg-slate-900">
@@ -114,7 +173,8 @@
                         <p class="text-lg text-firefly-700 dark:text-white prose dark:prose-invert">
                             Our agenda touches key areas in governance, building strong institutions, Economy, Education
                             and
-                            Skills development, Innovation and Technology as well as social foundations and belief systems. These are just
+                            Skills development, Innovation and Technology as well as social foundations and belief
+                            systems. These are just
                             some of
                             the key factors that contribute to a nation's transformational capacity, and the specific
                             mix of factors will vary depending on the context and challenges faced by each individual
@@ -166,8 +226,8 @@
 
                             <li class="flex space-x-3">
                                 <!-- Solid Check -->
-                                <svg class="flex-shrink-0 h-6 w-6 text-firefly-600 dark:text-firefly-500" width="16"
-                                    height="16" viewBox="0 0 16 16" fill="none"
+                                <svg class="flex-shrink-0 h-6 w-6 text-firefly-600 dark:text-firefly-500"
+                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M15.1965 7.85999C15.1965 3.71785 11.8387 0.359985 7.69653 0.359985C3.5544 0.359985 0.196533 3.71785 0.196533 7.85999C0.196533 12.0021 3.5544 15.36 7.69653 15.36C11.8387 15.36 15.1965 12.0021 15.1965 7.85999Z"
@@ -184,8 +244,8 @@
                             </li>
                             <li class="flex space-x-3">
                                 <!-- Solid Check -->
-                                <svg class="flex-shrink-0 h-6 w-6 text-firefly-600 dark:text-firefly-500" width="16"
-                                    height="16" viewBox="0 0 16 16" fill="none"
+                                <svg class="flex-shrink-0 h-6 w-6 text-firefly-600 dark:text-firefly-500"
+                                    width="16" height="16" viewBox="0 0 16 16" fill="none"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path
                                         d="M15.1965 7.85999C15.1965 3.71785 11.8387 0.359985 7.69653 0.359985C3.5544 0.359985 0.196533 3.71785 0.196533 7.85999C0.196533 12.0021 3.5544 15.36 7.69653 15.36C11.8387 15.36 15.1965 12.0021 15.1965 7.85999Z"

@@ -1,5 +1,74 @@
 <x-front-layout>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Card Section -->
+    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+        <!-- Grid -->
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
+            @foreach ($institutes as $institute)
+                <!-- Card -->
+                <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+                    href="#">
+                    <div class="p-4 md:p-5">
+                        <div class="flex justify-between items-center">
+                            <div class="flex items-center">
+                                <img class="h-[3.375rem] w-[3.375rem] rounded-full" src="{{ $institute->institute_logo }}"
+                                    alt="{{ $institute->name }}">
+                                <div class="ml-3">
+                                    <h5
+                                        class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
+                                        Enrollments
+                                    </h5>
+                                </div>
+                            </div>
+                            <div class="pl-3">
+                                <svg class="w-3.5 h-3.5 text-gray-500" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none">
+                                    <path
+                                        d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <!-- End Card -->
+            @endforeach
+
+
+
+        </div>
+        <!-- End Grid -->
+    </div>
+    <!-- End Card Section -->
+
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Institute Name</th>
+                <th>Participants</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach ($institutes as $institute)
+                <tr>
+                    <td>{{ $institute->name }}</td>
+                    <td>
+                        <ul>
+                            @foreach ($institute->participants as $participant)
+                                <li>{{ $participant->name }}</li>
+                            @endforeach
+                        </ul>
+                    </td>
+                </tr>
+            @endforeach
+        </tbody>
+    </table>
+
+
+
+    {{-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <div class="p-8">
 
         <div id="alert" class="alert bg-blue-50 border border-blue-200 rounded-md p-4" role="alert" style="display: none;">
@@ -25,9 +94,15 @@
             </div>
         </div>
 
-    </div>
-</x-front-layout>
+    </div> --}}
 
+
+
+
+
+
+</x-front-layout>
+{{--
 <script>
     $(document).ready(function () {
         var hasAcceptedCookies = sessionStorage.getItem('cookieConsentAccepted');
@@ -41,4 +116,4 @@
             $("#alert").fadeOut();
         });
     });
-</script>
+</script> --}}
