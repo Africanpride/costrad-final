@@ -29,7 +29,6 @@
 
     <script src="//cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"></script>
 
-    <x-head.tinymce-config />
     @vite(['resources/css/app.css', 'resources/js/app.js'])
     @livewireStyles
 </head>

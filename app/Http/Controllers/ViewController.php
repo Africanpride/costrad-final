@@ -16,6 +16,7 @@ class ViewController extends Controller
             ->first();
         return view('home', compact('latest', 'upcomingInstitute'));
     }
+
     public function news()
     {
         $latest = Newsroom::latest()->take(2)->get();

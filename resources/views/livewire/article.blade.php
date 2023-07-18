@@ -135,7 +135,7 @@
 
 
                 <!-- Content -->
-                <article class="text-lg  text-gray-800 dark:text-gray-200 space-y-5">
+                <article class="text-[16] text-justify leading-normal  text-gray-800 dark:text-gray-200 space-y-5">
                     {!! $newsroom->body !!}
                 </article>
                 <!-- Content -->
