@@ -13,9 +13,8 @@
                     <x-slot name="paragraph">
                         Each donation made to (<a href="{{ url('costrad') }}"
                             class=" bg-clip-text bg-gradient-to-l from-firefly-600 to-violet-500 text-transparent dark:from-firefly-400 dark:to-violet-400 font-bold">COSTrAD</a>)
-                        has a significant effect that extends well beyond our campuses. Your contribution will make a
-                        difference in the lives of our students, enabling them to realize their potential as future
-                        leaders. Thank you for your support.
+                        has a significant effect that extends well beyond our walls. Your contribution will make the
+                        difference as we raise effective leaders for tomorrow. Thank you for your support.
 
                     </x-slot>
 
@@ -360,8 +359,7 @@ value="{{ Auth::user()->email }}" @endauth
                                             Box CT 4467
                                             Cantonments, Accra; Greater Accra Region, Ghana</span>" , with "College of
                                         Sustainable
-                                        Transformation And Development" As Payee. Thanks you in advance for your Kind
-                                        donation.
+                                        Transformation And Development" as beneficianry. Thank you in advance.
                                     </p>
                                 </div>
                         </div>

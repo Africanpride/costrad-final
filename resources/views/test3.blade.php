@@ -1,45 +1,44 @@
 <x-front-layout>
-
-    <!-- Card Section -->
-    <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-        <!-- Grid -->
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6">
-            @foreach ($institutes as $institute)
-                <!-- Card -->
-                <a class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
-                    href="#">
-                    <div class="p-4 md:p-5">
-                        <div class="flex justify-between items-center">
-                            <div class="flex items-center">
-                                <img class="h-[3.375rem] w-[3.375rem] rounded-full" src="{{ $institute->institute_logo }}"
-                                    alt="{{ $institute->name }}">
-                                <div class="ml-3">
-                                    <h5
-                                        class="group-hover:text-blue-600 font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
-                                        Enrollments
-                                    </h5>
+    <div class="grid-cols-12">
+        <div class="bg-white shadow-md">
+            <div class="overflow-hidden">
+                <div class="bg-blue-200 h-2"></div>
+                <div class="bg-indigo-200 h-1 animate-pulse"></div>
+            </div>
+            <div class="p-4">
+                <table class="w-full border-collapse">
+                    <thead>
+                        <tr>
+                            <th class="py-2 px-4 border-b">NAME</th>
+                            <th class="py-2 px-4 border-b">EMAIL</th>
+                            <th class="py-2 px-4 border-b">DATE</th>
+                            <th class="py-2 px-4 border-b">SALARY</th>
+                            <th class="py-2 px-4 border-b">AGE</th>
+                            <th class="py-2 px-4 border-b">STATUS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="py-2 px-4">
+                                <div class="flex flex-col">
+                                    <h6 class="text-sm font-medium">Edwina Ebsworth</h6>
+                                    <span class="text-xs">Human Resources Assistant</span>
                                 </div>
-                            </div>
-                            <div class="pl-3">
-                                <svg class="w-3.5 h-3.5 text-gray-500" width="16" height="16" viewBox="0 0 16 16"
-                                    fill="none">
-                                    <path
-                                        d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-                <!-- End Card -->
-            @endforeach
-
-
-
+                            </td>
+                            <td class="py-2 px-4 text-sm">eebsworth2m@sbwire.com</td>
+                            <td class="py-2 px-4 text-sm">09/27/2018</td>
+                            <td class="py-2 px-4 text-sm">$19586.23</td>
+                            <td class="py-2 px-4 text-sm">27</td>
+                            <td>
+                                <span class="inline-block py-1 px-2 text-xs font-medium text-white bg-blue-500 rounded capitalize">Current</span>
+                            </td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
         </div>
-        <!-- End Grid -->
     </div>
-    <!-- End Card Section -->
 
 
 
