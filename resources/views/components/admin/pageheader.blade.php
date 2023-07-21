@@ -10,7 +10,7 @@ background-position-y: center;   background-origin: content-box;
     ]) }}>
 
     <div class="flex  items-center z-10 tracking-wider	 ">
-        <div class="text-white font-extrabold leading-snug text-md md:text-xl  whitespace-nowrap">{!! $description ?? ' ' !!} </div>
+        <div class="text-firefly-100 font-extrabold leading-5 text-md md:text-xl  w-3/5  ">{!! $description ?? ' ' !!} </div>
         <div class="h-7 border border-l  border-firefly-200  mx-4 hidden"></div>
         <div class=" flex-nowrap hidden  ">
             <div class="h-12 w-12 ">

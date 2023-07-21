@@ -1,20 +1,20 @@
 <x-app-layout>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    <div class="p-6 grid md:grid-cols-2 gap-4">
+    <div class="p-6 grid md:grid-cols-3 gap-4">
 
 
-            <div class="col-md-5">
-                <div class="box shadow">
+            <div class="aspect-video col-span-full md:col-span-1 bg-white dark:bg-gray-950 ">
+                <div class="box shadow ">
                     <div id="bar"></div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="box shadow">
+            <div class="aspect-video col-span-full md:col-span-1 bg-white dark:bg-gray-950 ">
+                <div class="box shadow ">
                     <div id="donutTop"></div>
                 </div>
             </div>
-            <div class="col-md-3">
-                <div class="box shadow">
+            <div class="aspect-video col-span-full md:col-span-1 bg-white dark:bg-gray-950 ">
+                <div class="box shadow ">
                     <div id="radialBar1"></div>
                 </div>
             </div>
@@ -304,11 +304,11 @@
             type: 'radialBar',
             height: 266,
             zoom: {
-                enabled: false
+                enabled: true
             },
             offsetY: 0
         },
-        colors: ['#cc0099'],
+        colors: ['limegreen'],
         plotOptions: {
             radialBar: {
                 dataLabels: {
@@ -321,17 +321,17 @@
                 }
             }
         },
-        series: [65],
+        series: [88],
         theme: {
             monochrome: {
                 enabled: false
             }
         },
         legend: {
-            show: false
+            show: true
         },
         title: {
-            text: 'Bounce Rate',
+            text: 'Overall Progress',
             align: 'left'
         }
     }

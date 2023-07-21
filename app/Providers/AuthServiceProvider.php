@@ -59,5 +59,8 @@ class AuthServiceProvider extends ServiceProvider
         Gate::define('userEnrolled', function ($user, Institute $institute) {
             return Invoice::where('participant_id', $user->id)->where('institute_id', $institute->id)->first();
         });
+        Gate::define('pendingInvoices', function ($user) {
+            return Invoice::where('participant_id', $user->id)->where('status','pending')->first();
+        });
     }
 }

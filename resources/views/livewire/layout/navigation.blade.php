@@ -1,5 +1,5 @@
 <div id="application-sidebar"
-    class="soft-scrollbar overflow-x-auto hs-overlay hs-overlay-open:translate-x-0 -translate-x-full  duration-300 transform hidden fixed top-0 left-0 bottom-0 z-[60] md:w-2/12 bg-white border-r  pt-5 pb-10 overflow-y-auto scrollbar-y lg:block lg:translate-x-0 lg:right-auto lg:bottom-0 dark:scrollbar-y dark:bg-black dark:border-slate-800 scrollbar-thin
+    class="soft-scrollbar  hs-overlay hs-overlay-open:translate-x-0 -translate-x-full  duration-300 transform hidden fixed top-0 left-0 bottom-0 z-[60] md:w-2/12 bg-white border-r  pt-5 pb-10 overflow-y-auto scrollbar-y lg:block lg:translate-x-0 lg:right-auto lg:bottom-0 dark:scrollbar-y dark:bg-black dark:border-slate-800 scrollbar-thin
     scrollbar-thumb-firefly-800 scrollbar-track-gray-300 overflow-x-hidden">
     <div class="px-4">
         <a class="flex-none text-xl font-semibold dark:text-white" href="{{ url('/') }}"
@@ -86,7 +86,7 @@
                             <x-lucide-library class="w-6 h-6 text-current" />
 
                         </span>
-                        <span class=" capitalize">{{ __('Enrollments') }}</span>
+                        <span class=" capitalize">{{ __('Enrollment List') }}</span>
                     </a>
                 </li>
                 <li>

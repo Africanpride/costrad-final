@@ -1,6 +1,6 @@
 <x-app-layout>
     <div class="gap-x-5 grid md:grid-cols-12 my-10 px-4">
-        <div class="md:col-span-9">
+        <div class="{{ $invoice->status == 'pending' ? 'md:col-span-9' : 'md:col-span-12 px-12' }}">
 
             <!-- Invoice -->
             <div>
@@ -20,7 +20,7 @@
                                 </h2>
                                 <span class="mt-1 block text-gray-500">{{ $invoice->id }}</span>
 
-                                <address class="mt-4 not-italic text-firefly-800 dark:text-gray-200  ">
+                                <address class="mt-4 not-italic text-firefly-800 dark:text-gray-200 text-sm  ">
                                     <a href="{{ $institute->frontend_url }}"> <span
                                             class="font-bold capitalize">{{ $institute->name }}</span><br><span
                                             class="uppercase">({{ $institute->acronym }})</span></a> <br>
@@ -183,27 +183,37 @@
 
                     <!-- Buttons -->
                     <div class="my-5 flex justify-evenly md:justify-end gap-x-3 ">
-                        <a class="inline-flex justify-center items-center gap-x-3 text-sm text-center border hover:border-gray-300 shadow-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:border-gray-800 dark:hover:border-gray-600 dark:shadow-slate-700/[.7] dark:text-white dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800"
-                            href="#">
-                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path
-                                    d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z" />
-                                <path
-                                    d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
-                            </svg>
-                            Generate PDF
-                        </a>
-                        <a class="inline-flex justify-center items-center gap-x-3 text-center bg-firefly-600 hover:bg-firefly-700 border border-transparent text-sm text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-firefly-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
-                            href="#">
-                            <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                fill="currentColor" viewBox="0 0 16 16">
-                                <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
-                                <path
-                                    d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z" />
-                            </svg>
-                            Print details
-                        </a>
+
+                        <form id="pdf_invoice" method="POST"
+                            action="{{ route('pdf_invoice', ['invoice' => $invoice,'institute' => $institute->id]) }}" accept-charset="UTF-8"
+                            enctype="multipart/form-data">
+                            @csrf
+
+                            <button type="submit"
+                                class="inline-flex justify-center items-center gap-x-3 text-sm text-center border hover:border-gray-300 shadow-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:border-gray-800 dark:hover:border-gray-600 dark:shadow-slate-700/[.7] dark:text-white dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" viewBox="0 0 16 16">
+                                    <path
+                                        d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z" />
+                                    <path
+                                        d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
+                                </svg>
+                                Generate PDF
+                            </button>
+
+                            <a class="inline-flex justify-center items-center gap-x-3 text-center bg-firefly-600 hover:bg-firefly-700 border border-transparent text-sm text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-firefly-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+                                href="#">
+                                <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                    fill="currentColor" viewBox="0 0 16 16">
+                                    <path d="M2.5 8a.5.5 0 1 0 0-1 .5.5 0 0 0 0 1z" />
+                                    <path
+                                        d="M5 1a2 2 0 0 0-2 2v2H2a2 2 0 0 0-2 2v3a2 2 0 0 0 2 2h1v1a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-1h1a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-1V3a2 2 0 0 0-2-2H5zM4 3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v2H4V3zm1 5a2 2 0 0 0-2 2v1H2a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-1v-1a2 2 0 0 0-2-2H5zm7 2v3a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-3a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1z" />
+                                </svg>
+                                Print details
+                            </a>
+
+                        </form>
+
 
                         <button x-data="{ showButton: '{{ $invoice->status !== 'paid' }}' }"
                             x-bind:class="showButton ? '' : 'opacity-50 pointer-events-none'" x-show="showButton"
@@ -225,11 +235,13 @@
             </div>
             <!-- End Invoice -->
         </div>
-        <div class="md:col-span-3 space-y-3">
-            <div x-data="{ showDelete: '{{ $invoice->status == 'pending' }}' }"
-                x-bind:class="showDelete ? '' : 'opacity-50 pointer-events-none'" x-show="showDelete"
-                 class="flex flex-col p-4 sm:p-10 bg-slate-200/30 shadow-md rounded-xl dark:bg-gray-800 space-y-3">
-                <span class="text-sm dark:text-white"> Cancel attempted enrollment for <a href="{{ $institute->frontend_url }}"><span
+
+
+        <div class="md:col-span-3 space-y-3" x-data="{ showDelete: '{{ $invoice->status == 'pending' }}' }"
+            x-bind:class="showDelete ? '' : 'opacity-50 hidden pointer-events-none'" x-show="showDelete">
+            <div class="flex flex-col p-4 sm:p-10 bg-slate-200/30 shadow-md rounded-xl dark:bg-gray-800 space-y-3">
+                <span class="text-sm dark:text-white"> Cancel attempted enrollment for <a
+                        href="{{ $institute->frontend_url }}"><span
                             class="uppercase text-firefly-500">{{ $institute->acronym }}</span></a> by deleteing
                     invoice.
                 </span>
@@ -238,7 +250,8 @@
                 </x-jet-button>
             </div>
             <div class="flex flex-col p-4 sm:p-10 bg-slate-200/30 shadow-md rounded-xl dark:bg-gray-800 space-y-3">
-                <span class="text-sm dark:text-white"> Cancel attempted enrollment for <a href="{{ $institute->frontend_url }}"><span
+                <span class="text-sm dark:text-white"> Cancel attempted enrollment for <a
+                        href="{{ $institute->frontend_url }}"><span
                             class="uppercase text-firefly-500">{{ $institute->acronym }}</span></a> by deleteing
                     invoice.
                 </span>
@@ -247,7 +260,11 @@
                 </x-jet-button>
             </div>
         </div>
+
     </div>
+
+
+    <!-- ========== payment Modal ========== -->
 
     <div id="payInvoice"
         class="hs-overlay hidden w-full h-full fixed top-0 left-0 z-[60] overflow-x-hidden overflow-y-auto">
@@ -380,4 +397,6 @@
             </div>
         </div>
     </div>
+
+    <!-- ==========End payment Modal ========== -->
 </x-app-layout>

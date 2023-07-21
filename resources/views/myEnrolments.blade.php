@@ -1,4 +1,8 @@
 <x-app-layout>
+    <x-admin.pageheader model-name="{{ __('Institute') }}" description="{{ $institute->name }}" add-button="false" class="mx-4 capitalize">
+        <x-heroicon-o-finger-print class="w-6 h-6 text-current" />
+    </x-admin.pageheader>
+    <!-- user/invoices.blade.php -->
     <section class=" grid-cols-3 gap-4 h-auto hidden">
 
         <div class="relative col-span-full md:col-span-2 p-2">
@@ -34,7 +38,7 @@
         </div>
     </section>
 
-    <section class="p-6">
+    <section class="p-6 hidden">
         <!-- Jumbotron -->
         <div class=" mx-auto p-6 shadow rounded-lg bg-firefly-50 dark:bg-slate-900 dark:text-white ">
             {{-- <h2 class="font-semibold text-3xl mb-5">Hello world!</h2> --}}

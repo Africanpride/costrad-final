@@ -15,8 +15,8 @@ return new class extends Migration
     {
         Schema::create('invoices', function (Blueprint $table) {
             $table->uuid('id')->primary();
-            $table->foreignUuid('participant_id')->constrained('users')->onDelete('cascade');
-            $table->foreignUuid('transaction_id')->nullable()->constrained('transactions')->onDelete('cascade');
+            $table->foreignUuid('participant_id')->constrained('users');
+            $table->foreignUuid('transaction_id')->nullable()->constrained('transactions');
             $table->string('status')->default();
             $table->timestamps();
         });

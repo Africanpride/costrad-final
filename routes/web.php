@@ -45,8 +45,15 @@ Route::get('pay', function () {
 Route::get('payment/installment-payment/{institute}/{invoice}', function ($institute = null, $invoice = null) {
 
     return to_route('invoices');
-
 })->name('installment-payment')->middleware('auth');
+
+Route::get('pdf_invoice', function () {
+    // return error
+    return redirect()->to_route('home');
+});
+
+Route::post('pdf_invoice', [ViewController::class, 'pdf_invoice'])->name('pdf_invoice');
+
 
 Route::post('payment/installment-payment/{institute}/{invoice}', function ($institute = null, $invoice = null) {
     $invoice = Invoice::whereId($invoice)->with('transactions', 'institute')->first();
@@ -56,7 +63,6 @@ Route::post('payment/installment-payment/{institute}/{invoice}', function ($inst
         'institute' => $institute,
         'invoice' => $invoice
     ]);
-
 })->name('installment-payment')->middleware('auth');
 
 
@@ -74,6 +80,7 @@ Route::get('/payment/callback', [App\Http\Controllers\PaymentController::class, 
 
 
 
+Route::get('pdf_invoice', [ViewController::class, 'pdf_invoice']);/*  */
 Route::get('terms', [ViewController::class, 'terms']);
 Route::get('help', [ViewController::class, 'help']);
 Route::get('topics', [ViewController::class, 'topics']);
@@ -87,6 +94,9 @@ Route::get('our-process', [ViewController::class, 'ourProcess']);
 Route::get('institutes', [ViewController::class, 'institutes']);
 Route::get('/', [ViewController::class, 'home'])->name('home');
 Route::get('news', [ViewController::class, 'news'])->name('news');
+Route::get('test4', function() {
+    return view('test4');
+})->name('news')->middleware('auth');
 
 
 

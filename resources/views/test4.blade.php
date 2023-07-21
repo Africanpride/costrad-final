@@ -1,26 +1,14 @@
 <x-app-layout>
+
+
     <div class="p-8">
-        <div class="relative w-24 h-24 grid place-items-center" x-data="{ circumference: 40 * 2 * Math.PI, percent: 50 }">
-            <svg class="w-24 h-24 transform translate-x-1 translate-y-1" x-cloak aria-hidden="true">
-                <circle class="text-gray-300/80" stroke-width="8" stroke="currentColor" fill="transparent" r="40" cx="45" cy="45" />
-                <circle class="text-custom-color" stroke-width="7" :stroke-dasharray="circumference"
-                    :stroke-dashoffset="circumference - percent / 100 * circumference" stroke-linecap="round"
-                    stroke="currentColor" fill="transparent" r="40" cx="45" cy="45" />
-            </svg>
-            <span class="absolute text-3xl text-lime-600 font-['anton']" x-text="`${percent}%`"></span>
+
+
+        <div class="progress-bar-container flex">
+            <div class="progress-bar js">
+                <progress id="js" min="0" max="100" value="73"></progress>
+            </div>
         </div>
-
-
-        <div class="relative w-24 h-24 grid place-items-center" x-data="{ circumference: 40 * 2 * Math.PI, percent: 50 }">
-            <svg class="w-24 h-24 transform translate-x-1 translate-y-1" x-cloak aria-hidden="true">
-                <circle class="text-gray-300/80" stroke-width="9" stroke="currentColor" fill="transparent" r="40" cx="45" cy="45" />
-                <circle class="text-firefly-600" stroke-width="10" :stroke-dasharray="circumference"
-                    :stroke-dashoffset="circumference - percent / 100 * circumference" stroke-linecap="round"
-                    stroke="currentColor" fill="transparent" r="40" cx="45" cy="45" />
-            </svg>
-            <span class="absolute text-xl text-firefly-600 font-['anton']" x-text="`${percent}%`"></span>
-        </div>
-
 
 
 
@@ -28,3 +16,58 @@
     </div>
 
 </x-app-layout>
+
+<style>
+
+@property --progress-value {
+    syntax: "<integer>";
+    inherits: false;
+    initial-value: 0;
+  }
+  @-webkit-keyframes js-progress {
+    to {
+      --progress-value: 33;
+    }
+  }
+  @keyframes js-progress {
+    to {
+      --progress-value: 33;
+    }
+  }
+  .progress-bar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* to center the percentage value */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .progress-bar::before {
+    counter-reset: percentage var(--progress-value);
+    content: counter(percentage) "%";
+  }
+
+  .js {
+    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
+    -webkit-animation: js-progress 2s 1 forwards;
+            animation: js-progress 2s 1 forwards;
+  }
+
+  .js::before {
+    -webkit-animation: js-progress 2s 1 forwards;
+            animation: js-progress 2s 1 forwards;
+  }
+
+
+  h2 {
+    text-align: center;
+  }
+
+  progress {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+  }
+</style>

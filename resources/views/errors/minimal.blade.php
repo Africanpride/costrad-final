@@ -15,12 +15,15 @@
                 font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
             }
         </style>
+            @vite(['resources/css/app.css', 'resources/js/app.js'])
+
     </head>
     <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center sm:pt-0">
-            <div class="max-w-5xl mx-auto sm:px-6 lg:px-8">
-                <div class="flex items-center pt-8 sm:justify-start sm:pt-0">
-                    <div class="px-4 text-lg text-gray-500 border-r border-gray-400 tracking-wider">
+            <div class="max-w-5xl mx-auto sm:px-6 lg:px-8 space-y-4">
+                <x-admin.branding />
+                <div class="flex items-center pt-8 sm:justify-start sm:pt-0 ">
+                    <div class="pr-4 text-lg text-gray-500 border-r border-gray-400 tracking-wider">
                         @yield('code')
                     </div>
 
@@ -28,6 +31,16 @@
                         @yield('message')
                     </div>
                 </div>
+
+                <div class="block py-4 ">
+                    <a href="{{ route('home') }}" type="button" class="cursor-pointer w-full px-6 py-2 bg-firefly-600 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-firefly-700 hover:shadow-lg focus:bg-firefly-700 focus:shadow-lg focus:outline-none focus:ring-0 active:bg-firefly-800 active:shadow-lg transition duration-150 ease-in-out text-center">
+                        Back Home
+                    </a>
+                    {{-- <div class="px-4 text-lg text-gray-500  border-gray-400 tracking-wider">
+
+                    </div> --}}
+                </div>
+                {{-- <div>Action: </div> --}}
             </div>
         </div>
     </body>

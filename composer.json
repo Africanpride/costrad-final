@@ -9,6 +9,7 @@
         "arielmejiadev/larapex-charts": "^2.1",
         "aristridely/slideover": "^1.0",
         "aws/aws-sdk-php": "^3.0",
+        "barryvdh/laravel-dompdf": "^2.0",
         "biscolab/laravel-recaptcha": "^6.0",
         "blade-ui-kit/blade-heroicons": "^2.0",
         "blockpc/select2-wire": "^1.1",
