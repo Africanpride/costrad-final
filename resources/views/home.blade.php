@@ -152,7 +152,7 @@
 
     <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
         <div
-            class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5 p-8
+            class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5 p-4
          bg-slate-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
          from-firefly-900 to-firefly-900/80">
             <div class="lg:px-8 max-w-8xl md:my-16 mx-auto px-4 space-y-5 text-center">
@@ -168,7 +168,7 @@
                         <a href="{{ route('news') }}">More News & Publications</a></span> </p>
             </div>
 
-            <div class="grid gap-4 md:grid-cols-4 sm:mx-auto md:max-w-full">
+            <div class="grid gap-4 md:grid-cols-4 sm:mx-auto md:max-w-full md:px-8">
                 @if ($latest->count() > 0)
 
                     @foreach ($latest as $article)

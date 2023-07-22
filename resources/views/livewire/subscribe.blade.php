@@ -312,11 +312,11 @@
                 </clipPath>
             </defs>
         </svg>
-        <div class="max-w-xl relative z-10 text-center mx-auto">
+        <div class="max-w-3xl relative z-10 text-center mx-auto">
             <div class="mb-5">
-                <h2 class="text-2xl font-bold md:text-3xl dark:text-white">Subscribe</h2>
-                <p class="mt-3 text-gray-500 dark:text-gray-400">Get all the latest COSTrAD updates and news. We
-                    promise we do not spam.</p>
+                <h2 class="text-2xl font-bold md:text-3xl dark:text-white">{{ __('Newsletter') }}</h2>
+                <p class="mt-3 text-gray-500 dark:text-gray-400">{{ __('Get all the latest COSTrAD updates and news. We
+                    promise we do not spam.') }}</p>
             </div>
 
             <!-- Begin Mailchimp Signup Form -->
@@ -327,16 +327,21 @@
                     class="validate" target="_blank" novalidate="novalidate">
                     <div id="mc_embed_signup_scroll">
                         <div class="grid sm:flex gap-3">
+
                             <input type="email" value="" name="EMAIL" id="mce-EMAIL"
-                                class="block w-full border-gray-200 sm:text-sm shadow-sm rounded-md p-3 dark:bg-[#151c2f] dark:border-gray-800 dark:text-gray-400"
+                                class="block w-full border-gray-200 sm:text-sm shadow-sm rounded-md px-3 py-2 dark:bg-firefly-900
+                                 dark:border-gray-800 dark:text-gray-400"
                                 placeholder="Email address">
-                            <input type="submit" name="subscribe" id="mc-embedded-subscribe"
-                                class="inline-block text-center bg-blue-600 hover:bg-blue-700 border border-transparent text-white font-medium rounded-md cursor-pointer focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-gray-100 transition py-2.5 px-6 dark:focus:ring-offset-[#151c2f]">
+
+                            <x-jet-button class="py-2.5 px-6" type="submit" name="subscribe" id="mc-embedded-subscribe">
+                                {{ __('Subscribe') }}
+                            </x-jet-button>
+
                         </div>
 
                         <div id="mce-responses" class="mt-3 text-gray-500 dark:text-gray-400">
-                            <div class="response" id="mce-error-response" style="display:none"></div>
-                            <div class="response" id="mce-success-response" style="display:none"></div>
+                            <div class="response text-red-500" id="mce-error-response" style="display:none"></div>
+                            <div class="response text-green-500" id="mce-success-response" style="display:none"></div>
                         </div>
 
                         <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
