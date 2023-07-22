@@ -6,7 +6,7 @@
 
     <div class="mt-5 md:mt-0 md:col-span-3 ">
         <div class="px-4 py-5 sm:p-8 bg-white sm:rounded-lg
-         dark:text-white dark:bg-slate-900  ">
+         dark:text-white dark:bg-firefly-900  ">
             {{ $content }}
         </div>
     </div>

@@ -1,7 +1,7 @@
-<section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
+<section class="h-auto max-w-8xl md:pr-10 md:px-8 mx-auto p-4 py-10">
 
     <div
-        class="ring-1 ring-gray-200 dark:ring-gray-700 shadow bg-gray-200/60 relative rounded-2xl p-5 sm:py-16 before:absolute before:top-0 before:left-0  before:bg-no-repeat before:bg-top before:bg-contain before:w-2/3 before:h-full before:z-0 dark:bg-[#151c2f] ">
+        class="ring-1 ring-gray-200 dark:ring-gray-400/10 shadow bg-gray-100/60 relative rounded-2xl p-5 sm:py-16 before:absolute before:top-0 before:left-0  before:bg-no-repeat before:bg-top before:bg-contain before:w-2/3 before:h-full before:z-0 dark:bg-transparent ">
         <svg class="absolute inset-0 opacity-10 dark:opacity-90 left-0 z-0 " width="585" height="176"
             viewBox="0 0 585 176" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_755_12)">

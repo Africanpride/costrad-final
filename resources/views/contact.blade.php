@@ -34,7 +34,7 @@
                 <!-- Grid -->
                 <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                     <!-- Card -->
-                    <a class="group flex flex-col bg-white border border-gray-400/40 shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+                    <a class="group flex flex-col bg-white border border-gray-400/40 shadow-sm rounded-xl hover:shadow-md transition dark:bg-firefly-900 dark:border-gray-800"
                         href="#">
                         <div class="p-4 md:p-5">
                             <div class="flex">
@@ -60,7 +60,7 @@
                     <!-- End Card -->
 
                     <!-- Card -->
-                    <a class="group flex flex-col bg-white border border-gray-400/40 shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+                    <a class="group flex flex-col bg-white border border-gray-400/40 shadow-sm rounded-xl hover:shadow-md transition dark:bg-firefly-900 dark:border-gray-800"
                         href="https://wa.me/+233504700700?text=COSTrAD%20contact!" target="_blank">
                         <div class="p-4 md:p-5">
                             <div class="flex">
@@ -92,7 +92,7 @@
                     <!-- End Card -->
 
                     <!-- Card -->
-                    <a class="group flex flex-col bg-white border border-gray-400/40 shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+                    <a class="group flex flex-col bg-white border border-gray-400/40 shadow-sm rounded-xl hover:shadow-md transition dark:bg-firefly-900 dark:border-gray-800"
                         href="{{ url('help') }}">
                         <div class="p-4 md:p-5">
                             <div class="flex">
@@ -119,7 +119,7 @@
                     <!-- End Card -->
 
                     <!-- Card -->
-                    <a class="group flex flex-col bg-white border border-gray-400/40 shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+                    <a class="group flex flex-col bg-white border border-gray-400/40 shadow-sm rounded-xl hover:shadow-md transition dark:bg-firefly-900 dark:border-gray-800"
                         href="mailto:info@costrad.org">
                         <div class="p-4 md:p-5">
                             <div class="flex">
@@ -164,7 +164,7 @@
                             <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-4">
 
                                 <!-- Card -->
-                                <a class="group flex flex-col bg-white border border-gray-400/40 shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+                                <a class="group flex flex-col bg-white border border-gray-400/40 shadow-sm rounded-xl hover:shadow-md transition dark:bg-firefly-900 dark:border-gray-800"
                                     href="https://twitter.com/MyCostrad" target="_blank">
                                     <div class="p-4 md:p-5">
                                         <div class="flex">
@@ -198,7 +198,7 @@
                                 <!-- End Card -->
 
                                 <!-- Card -->
-                                <a class="group flex flex-col bg-white border border-gray-400/40 shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+                                <a class="group flex flex-col bg-white border border-gray-400/40 shadow-sm rounded-xl hover:shadow-md transition dark:bg-firefly-900 dark:border-gray-800"
                                     href="https://twitter.com/MyCostrad" target="_blank">
                                     <div class="p-4 md:p-5">
                                         <div class="flex">
@@ -221,7 +221,7 @@
                                 <!-- End Card -->
 
                                 <!-- Card -->
-                                <a class="group flex flex-col bg-white border border-gray-400/40 shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+                                <a class="group flex flex-col bg-white border border-gray-400/40 shadow-sm rounded-xl hover:shadow-md transition dark:bg-firefly-900 dark:border-gray-800"
                                     href="https://twitter.com/MyCostrad" target="_blank">
                                     <div class="p-4 md:p-5">
                                         <div class="flex">
@@ -243,7 +243,7 @@
                                 </a>
                                 <!-- End Card -->
                                 <!-- Card -->
-                                <a class="group flex flex-col bg-white border border-gray-400/40 shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800"
+                                <a class="group flex flex-col bg-white border border-gray-400/40 shadow-sm rounded-xl hover:shadow-md transition dark:bg-firefly-900 dark:border-gray-800"
                                     href="https://www.youtube.com/@costrad6590" target="_blank">
                                     <div class="p-4 md:p-5">
                                         <div class="flex">

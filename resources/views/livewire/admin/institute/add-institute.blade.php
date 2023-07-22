@@ -14,14 +14,14 @@
 
                 <div>
                     <input wire:model="name" id="name" type="text"
-                        class="py-2 px-4 pl-9 pr-16 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700
+                        class="py-2 px-4 pl-9 pr-16 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700
                         dark:text-gray-400"
                         placeholder="Institute Name">
                     @error('name')
                         <span class="text-red-500">{{ $message }}</span>
                     @enderror
                 </div>
-                <div class="py-2 px-4 pl-6 pr-8 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700
+                <div class="py-2 px-4 pl-6 pr-8 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700
                 dark:text-gray-400">
                     <div class="flex items-start py-2 relative">
                         <div class="flex items-center h-5">
@@ -46,7 +46,7 @@
 
 
                         <input wire:model="acronym" id="acronym" type="text"
-                            class="py-2 px-4 pl-9 pr-16 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700
+                            class="py-2 px-4 pl-9 pr-16 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700
                             dark:text-gray-400"
                             placeholder="Institute Acronym">
                         @error('acronym')
@@ -58,7 +58,7 @@
                         <div class="relative">
                             <input wire:model="price" type="text" id="hs-input-with-leading-and-trailing-icon"
                                 name="hs-input-with-leading-and-trailing-icon"
-                                class="py-2 px-4 pl-9 pr-16 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700
+                                class="py-2 px-4 pl-9 pr-16 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700
                                      dark:text-gray-400"
                                 placeholder="0.00">
                             <div class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">
@@ -127,7 +127,7 @@
                         class=" font-medium text-gray-700 dark:text-gray-300 text-xs text-[0.7rem] flex justify-start">
                         SEO Keywords (Comma Seperated) </label>
                     <textarea wire:model="seo"
-                        class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                        class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                         rows="1"></textarea>
                     @error('seo')
                         <span class="text-red-500">{{ $message }}</span>
@@ -138,7 +138,7 @@
                         class=" font-medium text-gray-700 dark:text-gray-300 text-xs text-[0.7rem] flex justify-start">
                         Institute Overview</label>
                     <textarea wire:model="overview"
-                        class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                        class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                         rows="3"></textarea>
                     @error('overview')
                         <span class="text-red-500">{{ $message }}</span>
@@ -149,7 +149,7 @@
                         class=" font-medium text-gray-700 dark:text-gray-300 text-xs text-[0.7rem] flex justify-start">
                         Institute Introduction</label>
                     <textarea wire:model="introduction"
-                        class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                        class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                         rows="3"></textarea>
                     @error('introduction')
                         <span class="text-red-500">{{ $message }}</span>
@@ -161,7 +161,7 @@
                         About Institute</label>
 
                     <textarea wire:model="about"
-                        class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                        class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                         rows="4"></textarea>
                     @error('about')
                         <span class="text-red-500">{{ $message }}</span>

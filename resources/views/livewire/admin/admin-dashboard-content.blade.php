@@ -25,7 +25,7 @@
                 <button class="dark:text-white bg-transparent" title="List View">
                     <x-heroicon-o-list-bullet class=" flex-shrink-0 w-8 h-8 text-gray-800 dark:text-gray-200" />
                 </button>
-                <button class="text-white dark:bg-slate-900 bg-firefly-700 p-2 ml-2" title="Grid View">
+                <button class="text-white dark:bg-firefly-900 bg-firefly-700 p-2 ml-2" title="Grid View">
                     <x-heroicon-o-squares-2x2 class=" flex-shrink-0 w-6 h-6 text-white dark:text-white" />
                 </button>
             </div>
@@ -80,7 +80,7 @@
         <div class="shadow-md dark:bg-gray-900 bg-gray-800 rounded-3xl px-6 pt-6 pb-6 h-full">
             <div class="flex justify-between items-center text-white text-2xl pb-6 font-bold">
                 <p>New User Registration</p>
-                <button class="text-white dark:bg-slate-900 bg-gray-700 p-2 ml-2" title="Grid View">
+                <button class="text-white dark:bg-firefly-900 bg-gray-700 p-2 ml-2" title="Grid View">
                     <x-heroicon-o-queue-list class=" flex-shrink-0 w-6 h-6 text-white dark:text-white" />
                 </button>
             </div>

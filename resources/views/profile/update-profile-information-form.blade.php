@@ -122,7 +122,7 @@
                 <div>
                     <x-jet-label for="title" value="{{ __('Title') }}" />
                     <select id="title"
-                        class="py-2 px-3 pr-9 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                        class="py-2 px-3 pr-9 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                         wire:model.defer="state.title" autocomplete="title">
                         <option value="">Select a title</option>
                         <option value="Mr">Mr</option>
@@ -136,7 +136,7 @@
                 <div>
                     <x-jet-label for="title" value="{{ __('Gender') }}" />
                     <select id="title"
-                        class="py-2 px-3 pr-9 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                        class="py-2 px-3 pr-9 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                         wire:model.defer="state.gender" autocomplete="gender">
                         <option value="">Select Gender</option>
                         <option value="male">male</option>
@@ -147,7 +147,7 @@
                 <div>
                     <x-jet-label for="dateOfBirth" value="{{ __('Date of Birth: DD/MM/YYYY') }}" />
                     <x-jet-input id="dateOfBirth" type="date" placeholder="Date of Birth"
-                        class="py-2 px-3 pr-9 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                        class="py-2 px-3 pr-9 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                         wire:model.defer="state.dateOfBirth" autocomplete="dateOfBirth" />
                     <x-jet-input-error for="dateOfBirth" class="mt-2" />
                 </div>
@@ -155,7 +155,7 @@
                 <div>
                     <x-jet-label for="marital_status" value="{{ __('Marital Status') }}" />
                     <select id="marital_status"
-                        class="py-2 px-3 pr-9 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                        class="py-2 px-3 pr-9 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                         wire:model.defer="state.marital_status" autocomplete="marital_status">
                         <option value="">Select Marital Status</option>
                         <option value="single">Single</option>
@@ -254,7 +254,7 @@
                     <div class="mt-1">
                         <textarea wire:model.defer="state.bio" autocomplete="bio" name="bio" id="bio" rows="5"
 
-                            class="shadow-sm focus:ring-blue-600 focus:border-blue-600 block w-full sm:text-sm border-gray-300 rounded-md dark:bg-slate-900 dark:text-gray-300 dark:border-gray-700"
+                            class="shadow-sm focus:ring-blue-600 focus:border-blue-600 block w-full sm:text-sm border-gray-300 rounded-md dark:bg-firefly-900 dark:text-gray-300 dark:border-gray-700"
                             placeholder="{{ Auth::user()?->profile->bio }}"></textarea>
                     </div>
                 </div>

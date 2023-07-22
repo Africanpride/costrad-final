@@ -9,7 +9,7 @@
         <div class="m-4 dark:text-white">
 
             <div
-                class="bg-gray-100 dark:bg-slate-900 dark:text-firefly-100 rounded-2xl w-full px-6 py-4 flex flex-col md:flex-row
+                class="bg-gray-100 dark:bg-firefly-900 dark:text-firefly-100 rounded-2xl w-full px-6 py-4 flex flex-col md:flex-row
         items-center text-gray-800 justify-between gap-5 ">
                 <div class="flex items-center ">
 

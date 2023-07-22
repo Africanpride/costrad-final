@@ -52,7 +52,7 @@
                             class=" font-medium text-gray-700 dark:text-gray-300 text-xs text-[0.7rem] flex justify-start">
                             Upload Banner Images</label>
                         <input type="file" name="banners[]" id="small-file-input"
-                            class="block w-full border border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400
+                            class="block w-full border border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400
     file:bg-transparent file:border-0
     file:bg-gray-100 file:mr-4
     file:py-2 file:px-4
@@ -93,7 +93,7 @@
                                     class=" font-medium text-gray-700 dark:text-gray-300 text-xs text-[0.7rem] flex justify-start">
                                     Institute Name</label>
                                 <input name="name" id="name" type="text"
-                                    class="py-2 px-4 pl-9 pr-16 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700
+                                    class="py-2 px-4 pl-9 pr-16 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700
                                         dark:text-gray-400"
                                     placeholder="{{ __($institute->name ?? 'Instittute Name Here.') }}"
                                     value="{{ old('name', optional($institute)->name) }}">
@@ -102,7 +102,7 @@
                                 @enderror
                             </div>
                             <div
-                                class="py-2 px-4 pl-6 pr-8 block w-full border border-gray-200/80 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700
+                                class="py-2 px-4 pl-6 pr-8 block w-full border border-gray-200/80 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700
                                     dark:text-gray-400">
                                 <label
                                     class=" font-medium text-gray-700 dark:text-gray-300 text-xs text-[0.7rem] flex justify-start">
@@ -134,7 +134,7 @@
                                         class=" font-medium text-gray-700 dark:text-gray-300 text-xs text-[0.7rem] flex justify-start">
                                         Acronym</label>
                                     <input name="acronym" id="acronym" type="text"
-                                        class="py-2 px-4 pl-9 pr-16 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700
+                                        class="py-2 px-4 pl-9 pr-16 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700
                                             dark:text-gray-400"
                                         placeholder="{{ __($institute->acronym ?? 'Institute Acronym Here.') }}"
                                         value="{{ old('acronym', optional($institute)->acronym) }}">
@@ -157,7 +157,7 @@
                                                     </span>
                                                 </div>
                                                 <input name="price" type="text" id="hs-input-with-add-on-url"
-                                                    class="py-2 px-4 pl-4 pr-16 block w-full border-gray-200 shadow-sm rounded-r-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                                                    class="py-2 px-4 pl-4 pr-16 block w-full border-gray-200 shadow-sm rounded-r-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                                                     placeholder="{{ __($institute->price ?? 'Instittute Value Here.') }}"
                                                     value="{{ old('price', optional($institute)->price) }}">
                                             </div>
@@ -217,7 +217,7 @@
                                     class=" font-medium text-gray-700 dark:text-gray-300 text-xs text-[0.7rem] flex justify-start">
                                     SEO Keywords (Comma Seperated) </label>
                                 <textarea name="seo"
-                                    class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                                    class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                                     rows="1">{{ old('seo', optional($institute)->seo) }}</textarea>
                                 @error('seo')
                                     <span class="text-red-500">{{ $message }}</span>
@@ -228,7 +228,7 @@
                                     class=" font-medium text-gray-700 dark:text-gray-300 text-xs text-[0.7rem] flex justify-start">
                                     Institute Overview</label>
                                 <textarea name="overview"
-                                    class=" placeholder:py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                                    class=" placeholder:py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                                     rows="3">{{ old('overview', optional($institute)->overview) }}</textarea>
                                 @error('overview')
                                     <span class="text-red-500">{{ $message }}</span>
@@ -239,7 +239,7 @@
                                     class=" font-medium text-gray-700 dark:text-gray-300 text-xs text-[0.7rem] flex justify-start">
                                     Institute Introduction</label>
                                 <textarea name="introduction"
-                                    class=" placeholder:py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                                    class=" placeholder:py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                                     rows="3">{{ old('introduction', optional($institute)->introduction) }}</textarea>
                                 @error('introduction')
                                     <span class="text-red-500">{{ $message }}</span>
@@ -251,7 +251,7 @@
                                     class=" font-medium text-gray-700 dark:text-gray-300 text-xs text-[0.7rem] flex justify-start">
                                     Institute about</label>
                                 <textarea name="about"
-                                    class="tinyText py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                                    class="tinyText py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                                     rows="3">{{ old('about', optional($institute)->about) }}</textarea>
                                 @error('about')
                                     <span class="text-red-500">{{ $message }}</span>
@@ -267,7 +267,7 @@
                                 class=" font-medium text-gray-700 dark:text-gray-300 text-xs text-[0.7rem] flex justify-start">
                                 Upload Logo</label>
                             <input type="file" name="logo" id="small-file-input"
-                                class="block w-full border border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400
+                                class="block w-full border border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400
           file:bg-transparent file:border-0
           file:bg-gray-100 file:mr-4
           file:py-2 file:px-4

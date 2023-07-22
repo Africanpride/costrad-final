@@ -60,11 +60,15 @@
     </section>
     <!-- component -->
     <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
+
         <div
-            class="py-10 bg-gray-200/50 dark:bg-transparent dark:border-gray-500/20 dark:border  sm:py-16 lg:py-24 rounded-3xl">
+            class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5
+            bg-slate-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
+             from-firefly-900 to-firefly-900/80">
+
             <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                 <div class="grid items-stretch gap-y-10 md:grid-cols-2 md:gap-x-8">
-                    <div class="relative grid grid-cols-2 gap-4 mt-10 md:mt-0">
+                    <div class="relative grid grid-cols-2 gap-4 mt-10 md:mt-0 py-12">
                         <div class="overflow-hidden aspect-w-3 aspect-h-4 rounded-2xl">
                             <img class="object-cover object-top origin-top scale-150 "
                                 src="{{ asset('images/main/leader2.jpg') }}" alt="" />
@@ -78,13 +82,13 @@
 
                         </div>
 
-                        <div class="absolute -translate-x-1/2 left-1/2 -top-16 ">
+                        <div class="absolute -translate-x-1/2 left-1/2 -top-2 ">
                             <img class="w-32 h-32 rotating" src="{{ asset('images/main/round-text-costrad.png') }}"
                                 alt="" />
                         </div>
                     </div>
 
-                    <div class="flex flex-col items-start justify-between md:px-8 space-y-3">
+                    <div class="flex flex-col items-start justify-center md:px-8 space-y-6 text-left ">
 
                         <h2
                             class="uppercase  text-slate-800 text-gradient1 inline-block mt-5 text-2xl md:text-3xl font-extrabold  bg-clip-text bg-gradient-to-l from-firefly-600 to-violet-500 text-transparent dark:from-firefly-400 dark:to-violet-400 ">
@@ -127,7 +131,8 @@
         <div
             class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5
          bg-slate-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
-          from-slate-900 to-gray-900">
+          from-firefly-900 to-firefly-900/80">
+
             <livewire:what-is-costrad />
 
         </div>
@@ -138,7 +143,7 @@
         <div
             class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5
          bg-slate-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
-          from-slate-900 to-gray-900">
+         from-firefly-900 to-firefly-900/80">
             <livewire:institutes-card />
 
         </div>
@@ -149,7 +154,7 @@
         <div
             class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5 p-8
          bg-slate-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
-          from-slate-900 to-gray-900">
+         from-firefly-900 to-firefly-900/80">
             <div class="lg:px-8 max-w-8xl md:my-16 mx-auto px-4 space-y-5 text-center">
                 <h2
                     class="  text-slate-900 text-3xl sm:text-5xl tracking-tight font-bold  font-['inter'] uppercase prominent-titles">

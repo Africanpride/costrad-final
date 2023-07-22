@@ -1,7 +1,7 @@
 <header
     class="flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-md  py-4 bg-white backdrop-blur-md
-md:backdrop-blur-none dark:bg-gray-900 text-sm  sticky top-0 inset-x-0  sm:justify-start sm:flex-nowrap !font-bold
- border-b  sm:py-0  dark:border-gray-700/50">
+md:backdrop-blur-none dark:bg-firefly-900 text-sm  sticky top-0 inset-x-0  sm:justify-start sm:flex-nowrap !font-bold
+ border-b  sm:py-0  dark:border-gray-700/20">
 
     <nav class="max-w-[85rem] flex flex-wrap basis-full items-center w-full mx-auto px-4 sm:px-6 lg:px-8 py-3"
         aria-label="Global">

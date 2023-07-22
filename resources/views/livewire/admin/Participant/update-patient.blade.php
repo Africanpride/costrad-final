@@ -82,7 +82,7 @@ transition-all duration-300 transform w-full md:max-w-lg h-screen">
                             <div class="space-y-3">
                                 <div class="relative" wire:model="insurance_id">
                                     <select
-                                        class="py-2 px-10 pr-9 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                                        class="py-2 px-10 pr-9 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                                         id="select2">
                                         <option>Select Insurance</option>
                                         @foreach ($insuranceOptions as $key => $insurance)
@@ -115,7 +115,7 @@ transition-all duration-300 transform w-full md:max-w-lg h-screen">
                     <div>
                         <div class="relative">
                             <select wire:model="title"
-                                class="py-2 px-10 pr-9 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
+                                class="py-2 px-10 pr-9 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400">
                                 <option selected>Select Participant Title</option>
                                 @foreach ($titleOptions as $option)
                                     <option value="{{ $option }}">{{ $option }}</option>
@@ -134,7 +134,7 @@ transition-all duration-300 transform w-full md:max-w-lg h-screen">
                     <div>
                         <div class="relative">
                             <select wire:model="gender"
-                                class="py-2 px-10 pr-9 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
+                                class="py-2 px-10 pr-9 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400">
                                 <option selected>Select Participant Gender</option>
                                 @foreach ($genderOptions as $gender)
                                     <option value="{{ $gender }}">{{ $gender }}</option>

@@ -18,14 +18,14 @@
                 <div class="">
                     <x-jet-label for="title" value="{{ __('Title') }}" />
                     <x-jet-input id="title" type="text"
-                        class="mt-1 block w-full dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                        class="mt-1 block w-full dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                         wire:model="title" autocomplete="title" placeholder="Title" />
                     <x-jet-input-error for="title" class="mt-2" />
                 </div>
 
                 <div class="">
                     <textarea wire:model="body" id="accouncementBody"
-                        class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                        class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                         rows="3" placeholder="Announcement content"></textarea>
 
 

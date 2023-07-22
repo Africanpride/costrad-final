@@ -25,7 +25,7 @@
                     @foreach ($institutes as $institute)
                         <!-- End Card Section -->
                         <div
-                            class="container grid grid-cols-12 bg-gray-200 dark:bg-slate-900 dark:text-gray-100
+                            class="container grid grid-cols-12 bg-gray-200 dark:bg-firefly-900 dark:text-gray-100
                             max-w-full mx-auto !rounded-xl  ">
                             <div class="relative grid place-items-center bg-no-repeat bg-cover  bg-gray-700 col-span-full md:col-span-4 md:rounded-l-xl  "
                                 style="background-image: url(' {{ asset('storage/images/logos/ghana.jpg') }}'); background-position: center center; background-blend-mode: multiply; background-size: cover;">

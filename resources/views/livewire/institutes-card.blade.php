@@ -13,11 +13,11 @@
     </div>
 
     {{-- Image --}}
-    <div class="gap-px grid md:grid-cols-4 md:mx-5 mt-8 md:px-8 sm:grid-cols-2">
+    <div class="gap-4 px-4 grid md:grid-cols-4 md:mx-5 mt-8 md:px-8 sm:grid-cols-2">
 
         @forelse ($institutes as $institute)
             <a href="{{ route('institute.show', [$institute->slug]) }}"
-                class="relative  p-4 sm:py-8 sm:px-6 transition duration-300 z-10 before:absolute rounded-md hover:bg-gray-100/50 dark:bg-slate-900 dark:hover:bg-slate-800">
+                class="relative  p-4 transition duration-300 z-10 before:absolute rounded-md hover:bg-gray-100/50 dark:bg-firefly-900 dark:hover:bg-firefly-900/50">
                 <div class="flex text-left">
                     <img class="object-cover w-20 h-20 mr-4 rounded-full shadow-md "
                         src="{{ asset($institute->institute_logo) }}" alt="Person" />

@@ -145,9 +145,9 @@
                                                                 class="block text-sm text-gray-500 mb-2">Optional</span>
                                                         </div>
                                                         <input type="text" id="with-corner-hint" name="name"
-                                                            class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-firefly-500 focus:ring-firefly-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                                                            class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-firefly-500 focus:ring-firefly-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                                                             @auth value="{{ Auth::user()->name }}" @endauth
-                                                            class="py-3 px-4 pl-11 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-firefly-500 focus:ring-firefly-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                                                            class="py-3 px-4 pl-11 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-firefly-500 focus:ring-firefly-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                                                             placeholder="Name"
                                                             @auth placeholder="{{ Auth::user()->name }}" @endauth>
                                                         <!-- End Card -->
@@ -163,7 +163,7 @@
                                                             <input type="email" id="hs-leading-icon" name="email"
                                                                 @auth
 value="{{ Auth::user()->email }}" @endauth
-                                                                class="py-3 px-4 pl-11 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-firefly-500 focus:ring-firefly-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                                                                class="py-3 px-4 pl-11 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-firefly-500 focus:ring-firefly-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                                                                 placeholder="you@site.com"
                                                                 @auth placeholder="{{ Auth::user()->email }}" @endauth>
                                                             <div
@@ -186,7 +186,7 @@ value="{{ Auth::user()->email }}" @endauth
                                                     <div class="relative">
                                                         <input type="number" name="amount"
                                                             id="hs-input-with-leading-and-trailing-icon"
-                                                            class="py-3 px-4 pl-9 pr-16 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-firefly-500 focus:ring-firefly-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                                                            class="py-3 px-4 pl-9 pr-16 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-firefly-500 focus:ring-firefly-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                                                             placeholder="0.00" required>
                                                         <div
                                                             class="absolute inset-y-0 left-0 flex items-center pointer-events-none z-20 pl-4">

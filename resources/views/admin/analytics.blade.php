@@ -10,7 +10,7 @@
             <!-- Grid -->
             <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
                 <!-- Card -->
-                <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-800/25">
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-firefly-900 dark:border-gray-800/25">
                     <div class="p-4 md:p-5 flex justify-between gap-x-3">
                         <div>
                             <p class="text-xs uppercase tracking-wide text-gray-500">
@@ -55,7 +55,7 @@
                 <!-- End Card -->
 
                 <!-- Card -->
-                <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-800/25">
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-firefly-900 dark:border-gray-800/25">
                     <div class="p-4 md:p-5 flex justify-between gap-x-3">
                         <div>
                             <p class="text-xs uppercase tracking-wide text-gray-500">
@@ -90,7 +90,7 @@
                 <!-- End Card -->
 
                 <!-- Card -->
-                <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-800/25">
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-firefly-900 dark:border-gray-800/25">
                     <div class="p-4 md:p-5 flex justify-between gap-x-3">
                         <div>
                             <p class="text-xs uppercase tracking-wide text-gray-500">
@@ -135,7 +135,7 @@
                 <!-- End Card -->
 
                 <!-- Card -->
-                <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-800/25">
+                <div class="flex flex-col bg-white border shadow-sm rounded-xl dark:bg-firefly-900 dark:border-gray-800/25">
                     <div class="p-4 md:p-5 flex justify-between gap-x-3">
                         <div>
                             <p class="text-xs uppercase tracking-wide text-gray-500">

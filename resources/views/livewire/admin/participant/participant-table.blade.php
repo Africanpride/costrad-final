@@ -15,11 +15,11 @@
 
                 <input wire:model.debounce.200ms="search" wire:keydown.escape="resetFilters"
                     wire:keydown.tab="resetFilters" type="text" placeholder="Search by First Name, Last Name, Email ..."
-                    class="py px-3 pr-9 block w-full border focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border dark:text-gray-400">
+                    class="py px-3 pr-9 block w-full border focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border dark:text-gray-400">
             </div>
             <div class="w-full md:col-span-2 ">
                 <select wire:model="orderBy"
-                    class="py px-3 pr-9 block w-full border focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border dark:text-gray-400"
+                    class="py px-3 pr-9 block w-full border focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border dark:text-gray-400"
                     id="grid-state">
                     <option value="firstName">First Name</option>
                     <option value="lastName">Last Name</option>
@@ -30,7 +30,7 @@
             </div>
             <div class="w-full md:col-span-2 ">
                 <select wire:model="orderAsc"
-                    class="py px-3 pr-9 block w-full border focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border dark:text-gray-400"
+                    class="py px-3 pr-9 block w-full border focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border dark:text-gray-400"
                     id="grid-state">
                     <option value="0">Descending</option>
                     <option value="1">Ascending</option>
@@ -41,7 +41,7 @@
             </div>
             <div class="w-full md:col-span-2 ">
                 <select wire:model="perPage"
-                    class="py px-3 pr-9 block w-full border focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border dark:text-gray-400"
+                    class="py px-3 pr-9 block w-full border focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border dark:text-gray-400"
                     id="grid-state">
                     <option value="10">10</option>
                     <option value="15">15</option>

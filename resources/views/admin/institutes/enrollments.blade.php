@@ -11,7 +11,7 @@
             <div class="-m-1.5 overflow-x-auto">
                 <div class="p-1.5 min-w-full inline-block align-middle">
                     <div
-                        class="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden dark:bg-slate-900 dark:border-gray-700">
+                        class="bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden dark:bg-firefly-900 dark:border-gray-700">
                         <!-- Header -->
                         <div
                             class="px-6 py-4 grid gap-3 md:flex md:justify-between md:items-center border-b border-gray-200 dark:border-gray-700">
@@ -28,7 +28,7 @@
                                 <div class="inline-flex gap-x-2">
                                     <div class="hs-dropdown relative inline-block [--placement:bottom-right]">
                                         <button id="hs-as-table-table-export-dropdown" type="button"
-                                            class="py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
+                                            class="py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-firefly-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
                                             <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="16"
                                                 height="16" fill="currentColor" viewBox="0 0 16 16">
                                                 <path
@@ -115,7 +115,7 @@
                                     <div class="hs-dropdown relative inline-block [--placement:bottom-right]"
                                         data-hs-dropdown-auto-close="inside">
                                         <button id="hs-as-table-table-filter-dropdown" type="button"
-                                            class="py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
+                                            class="py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-firefly-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
                                             <svg class="w-3 h-3" xmlns="http://www.w3.org/2000/svg" width="16"
                                                 height="16" fill="currentColor" viewBox="0 0 16 16">
                                                 <path
@@ -326,7 +326,7 @@
 
                             <tbody class="divide-y divide-gray-200 dark:divide-gray-700">
                                 @foreach ($institutes as $institute)
-                                    <tr class="bg-white hover:bg-gray-50 dark:bg-slate-900 dark:hover:bg-slate-800">
+                                    <tr class="bg-white hover:bg-gray-50 dark:bg-firefly-900 dark:hover:bg-slate-800">
                                         <td class="h-px w-px whitespace-nowrap">
                                             <a class="block relative z-10" href="#">
                                                 <div class="px-6 py-2">
@@ -489,7 +489,7 @@
                             <div>
                                 <div class="inline-flex gap-x-2">
                                     <button type="button"
-                                        class="py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
+                                        class="py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-firefly-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
                                         <svg class="w-3 h-3" width="16" height="16" viewBox="0 0 16 15"
                                             fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path
@@ -500,7 +500,7 @@
                                     </button>
 
                                     <button type="button"
-                                        class="py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
+                                        class="py-2 px-3 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-firefly-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
                                         Next
                                         <svg class="w-3 h-3" width="16" height="16" viewBox="0 0 16 16"
                                             fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -527,7 +527,7 @@
         <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-3 sm:gap-5">
             @foreach ($institutes as $institute)
                 <!-- Card -->
-                <div class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800 cursor-pointer"
+                <div class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-firefly-900 dark:border-gray-800 cursor-pointer"
                     data-hs-overlay="#hs-bg-gray-on-hover-cards">
                     <div class="p-2 md:p-3">
                         <div class="flex justify-between items-center">

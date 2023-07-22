@@ -1,8 +1,15 @@
 <x-front-layout>
-    <div class=" ">
-        <div class="min-h-screen flex flex-col items-center p-8 ">
+    <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
 
-            <div class="w-full  p-8 dark:bg-gray-800  shadow-md overflow-hidden sm:rounded-lg prose-img:rounded-xl max-w-max  prose dark:prose-invert">
+        <div
+            class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5
+            bg-slate-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
+             from-firefly-900 to-firefly-900/80">
+
+             <div class=" text-left w-full  p-4 md:p-8   sm:rounded-lg prose-img:rounded-xl max-w-max  prose dark:prose-invert ">
+
+
+
                 <h1>Terms of Service</h1>
 
                 <p>Thank you for using COSTrAD, a website owned and operated by the College of Sustainable
@@ -59,7 +66,8 @@
                 <p>If you have any questions or concerns about these Terms and Conditions, you may contact us at
                     info@costrad.org. For copyright infringement notices, please email webmaster@costrad.org.</p>
 
-            </div>
+                </div>
+
         </div>
-    </div>
+    </section>
 </x-front-layout>

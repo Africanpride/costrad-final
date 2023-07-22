@@ -16,7 +16,7 @@
                 alt="Image Description"> --}}
         </button>
 
-        <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[15rem] z-10 bg-white shadow-md rounded-lg p-2 dark:bg-gray-800 dark:border dark:border-gray-700"
+        <div class="hs-dropdown-menu transition-[opacity,margin] duration hs-dropdown-open:opacity-100 opacity-0 hidden min-w-[15rem] z-10 bg-white shadow-md rounded-lg p-4 dark:bg-firefly-900 dark:border dark:border-gray-700"
             aria-labelledby="hs-dropdown-with-header">
             <div class="py-3 px-5 -m-2 bg-gray-100 rounded-t-lg dark:bg-gray-700">
                 <p class="text-sm text-gray-500 dark:text-gray-400">{{ __('Signed in as') }}</p>

@@ -29,7 +29,7 @@
 
 <html class="h-full">
 
-<body class="dark:bg-slate-900 bg-gray-100 relative">
+<body class="dark:bg-firefly-900 bg-gray-100 relative">
 
 
     <div class="grid grid-cols-1 md:grid-cols-3  h-screen ">
@@ -66,7 +66,7 @@
 
             </div>
         </div>
-        <div class="col-span-2 h-full flex flex-col justify-center items-center dark:bg-slate-900 bg-gray-100">
+        <div class="col-span-2 h-full flex flex-col justify-center items-center dark:bg-firefly-900 bg-gray-100">
             <main class="w-full max-w-lg mx-auto p-6">
 
 

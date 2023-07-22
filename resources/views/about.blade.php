@@ -6,7 +6,6 @@
                 <div class="w-full px-4">
                     <div class="mx-auto mb-[60px] max-w-[920px] text-center lg:mb-20 space-y-3">
 
-
                         <x-top-title>
                             COSTrAD: A Leadership Development Initiative
                             <x-slot name="icon">
@@ -28,129 +27,68 @@
                 </div>
             </div>
         </div>
-        <!-- vision -->
-        <div class="">
-            <div class="relative overflow-hidden rounded-3xl">
-                <!-- Gradients -->
-                <div aria-hidden="true" class="flex absolute -top-96 left-1/2 transform -translate-x-1/2">
-                    <div
-                        class="bg-gradient-to-r from-violet-300/50 to-purple-400 blur-2xl w-[25rem] h-[44rem]  transform -translate-x-[10rem] dark:from-violet-600/50 dark:to-slate-700">
-                    </div>
-                    <div
-                        class="bg-gradient-to-tr from-gray-100 via-gray-300 to-gray-200 blur-2xl w-[90rem] h-[50rem] rounded-fulls origin-down rotate-5 -translate-x-[15rem] dark:from-indigo-900/70 dark:via-indigo-900/70 dark:to-firefly-900/70">
-                    </div>
-                </div>
-                <!-- End Gradients -->
-
-                <div class="relative z-10 py-8 shadow-2xl max-w-8xl p-4 md:p-8 md:pr-10 mx-auto">
-                    <div class="py-10">
-                        <div class="text-center mx-auto ">
-                            <span
-                                class="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-firefly-600 to-violet-500 text-transparent dark:from-firefly-400 dark:to-violet-400 uppercase ">
-                                COSTrAD: Our Transformational Vision
-                            </span>
-
-                            <!-- Title -->
-                            <div class="mt-5 max-w-10xl">
-                                <p class="block  text-firefly-800 text-lg md:text-3xl  dark:text-gray-100  uppercase">
-                                    Seeing the invisible, hearing the inaudible, touching the intangible, perceiving the
-                                    imperceptible and doing the seemingly impossible.
-                                </p>
-                            </div>
-                            <!-- End Title -->
-
-                            <!-- Buttons -->
-                            <div class="mt-8 grid gap-3 w-full sm:inline-flex sm:justify-center">
-                                <a class="inline-flex justify-center items-center gap-x-3 text-center bg-firefly-600 hover:bg-firefly-700 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-firefly-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
-                                    href="{{ url('our-process') }}">
-                                    Start the Journey
-                                    <svg class="w-3 h-3" width="16" height="16" viewBox="0 0 16 16"
-                                        fill="none">
-                                        <path
-                                            d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
-                                            stroke="currentColor" stroke-width="2" stroke-linecap="round" />
-                                    </svg>
-                                </a>
-                                <a class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold text-firefly-800 hover:bg-gray-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-offset-2 transition-all text-sm dark:text-white dark:hover:bg-gray-800 dark:hover:border-gray-900 dark:focus:ring-gray-900 dark:focus:ring-offset-gray-800"
-                                    href="{{ url('/institutes') }}">
-                                    <x-lucide-globe class="w-5 h-5 text-current " />
-                                    Our Institutes
-                                </a>
-                            </div>
-                            <!-- End Buttons -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- End vision -->
 
 
     </section>
 
-    <section class="max-w-8xl p-4 md:p-8 md:pr-10 mx-auto">
+    <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
 
-        <!-- Clients -->
-        <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-            <!-- Title -->
-            <div class="sm:w-1/2 xl:w-2/3 mx-auto text-center mb-6">
-                <h2 class="text-xl font-semibold md:text-4xl md:leading-tight text-gray-800 dark:text-gray-200">
-                    Educating Transformational Leaders For All Sectors of Society.</h2>
-            </div>
-            <!-- End Title -->
-
-            <!-- Grid -->
-            <div class="my-8 md:my-16 grid grid-cols-3 sm:flex sm:justify-center gap-4 sm:gap-x-6 lg:gap-x-10">
-
-                @foreach (App\Models\Institute::all() as $institute)
-                    <a class="flex-shrink-0 transition hover:-translate-y-1" href="{{ $institute->frontend_url }}">
-                        <img class="w-24" src="{{ $institute->institute_logo }}" alt="{{ $institute->name }}">
-                    </a>
-                @endforeach
-
-
-            </div>
-            <!-- End Grid -->
-
-            <!-- Grid -->
-            <div class="grid grid-cols-12 sm:flex sm:justify-center gap-6 sm:gap-x-12 lg:gap-x-20">
-                <div class="col-span-6 text-center">
-                    <h4 class="text-xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200">
-                        250+
-                    </h4>
-                    <h4 class="text-sm text-gray-600 dark:text-gray-400">
-                        Components
-                    </h4>
+        <div class="relative overflow-hidden rounded-2xl ">
+            <!-- Gradients -->
+            <div aria-hidden="true" class="flex absolute -top-96 left-1/2 transform -translate-x-1/2">
+                <div
+                    class="bg-gradient-to-r from-violet-300/50 to-purple-400 blur-2xl w-[25rem] h-[44rem]  transform -translate-x-[10rem] dark:from-violet-600/50 dark:to-slate-700">
                 </div>
-                <!-- End Col -->
-
-                <div class="col-span-6 text-center">
-                    <h4 class="text-xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200">
-                        160+
-                    </h4>
-                    <h4 class="text-sm text-gray-600 dark:text-gray-400">
-                        Starter Pages & Examples
-                    </h4>
+                <div
+                    class="bg-gradient-to-tr from-gray-100 via-gray-300 to-gray-200 blur-2xl w-[90rem] h-[50rem] rounded-fulls origin-down rotate-5 -translate-x-[15rem] dark:from-indigo-900/70 dark:via-indigo-900/70 dark:to-firefly-900/70">
                 </div>
-                <!-- End Col -->
-
-                <div class="col-start-4 col-span-6 text-center">
-                    <h4 class="text-xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200">
-                        10+
-                    </h4>
-                    <h4 class="text-sm text-gray-600 dark:text-gray-400">
-                        Tailwind CSS Plugins
-                    </h4>
-                </div>
-                <!-- End Col -->
             </div>
-            <!-- End Grid -->
+            <!-- End Gradients -->
+
+            <div class="relative z-10 py-8 shadow-2xl  p-4 md:p-8 md:pr-10 mx-auto">
+                <div class="py-10">
+                    <div class="text-center mx-auto ">
+                        <span
+                            class="inline-block text-sm font-medium bg-clip-text bg-gradient-to-l from-firefly-600 to-violet-500 text-transparent dark:from-firefly-400 dark:to-violet-400 uppercase ">
+                            COSTrAD: Our Transformational Vision
+                        </span>
+
+                        <!-- Title -->
+                        <div class="mt-5 max-w-10xl">
+                            <p class="block  text-firefly-800 text-lg md:text-3xl  dark:text-gray-100  uppercase">
+                                Seeing the invisible, hearing the inaudible, touching the intangible, perceiving the
+                                imperceptible and doing the seemingly impossible.
+                            </p>
+                        </div>
+                        <!-- End Title -->
+
+                        <!-- Buttons -->
+                        <div class="mt-8 grid gap-3 w-full sm:inline-flex sm:justify-center">
+                            <a class="inline-flex justify-center items-center gap-x-3 text-center bg-firefly-600 hover:bg-firefly-700 border border-transparent text-white text-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-firefly-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+                                href="{{ url('our-process') }}">
+                                Start the Journey
+                                <svg class="w-3 h-3" width="16" height="16" viewBox="0 0 16 16"
+                                    fill="none">
+                                    <path
+                                        d="M5.27921 2L10.9257 7.64645C11.1209 7.84171 11.1209 8.15829 10.9257 8.35355L5.27921 14"
+                                        stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                </svg>
+                            </a>
+                            <a class="py-3 px-4 inline-flex justify-center items-center gap-2 rounded-md border border-transparent font-semibold text-firefly-800 hover:bg-gray-800 hover:text-white focus:outline-none focus:ring-2 focus:ring-gray-800 focus:ring-offset-2 transition-all text-sm dark:text-white dark:hover:bg-gray-800 dark:hover:border-gray-900 dark:focus:ring-gray-900 dark:focus:ring-offset-gray-800"
+                                href="{{ url('/institutes') }}">
+                                <x-lucide-globe class="w-5 h-5 text-current " />
+                                Our Institutes
+                            </a>
+                        </div>
+                        <!-- End Buttons -->
+                    </div>
+                </div>
+            </div>
         </div>
-        <!-- End Clients -->
     </section>
 
     <!-- agenda -->
-    <div class="max-w-[85rem] w-full px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-firefly-100 dark:bg-slate-900">
+    <section class="max-w-[85rem] w-full px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-firefly-100 dark:bg-slate-900">
         <!-- Grid -->
         <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
             <div>
@@ -346,14 +284,80 @@
             <!-- End Col -->
         </div>
         <!-- End Grid -->
-    </div>
+    </section>
+
+
+    <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
+
+        <div
+            class=" md:p-24 p-5 mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-8
+            bg-slate-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
+             from-firefly-900 to-firefly-900/80 ">
+            <!-- Title -->
+            <div class="sm:w-1/2 xl:w-2/3 mx-auto text-center my-8">
+                <h2 class="text-xl font-semibold md:text-4xl md:leading-tight text-gray-800 dark:text-gray-200">
+                    Educating Transformational Leaders For All Sectors of Society.</h2>
+            </div>
+            <!-- End Title -->
+
+            <!-- Grid -->
+            <div class="my-8 md:my-16 grid grid-cols-3 sm:flex sm:justify-center gap-4 sm:gap-x-6 lg:gap-x-10">
+
+                @foreach (App\Models\Institute::all() as $institute)
+                    <a class="flex flex-shrink-0 hover:-translate-y-1 items-center justify-center text-center transition" href="{{ $institute->frontend_url }}">
+                        <img class="w-24" src="{{ $institute->institute_logo }}" alt="{{ $institute->name }}">
+                    </a>
+                @endforeach
+
+
+            </div>
+            <!-- End Grid -->
+
+            <!-- Grid -->
+            <div class="grid grid-cols-12 sm:flex sm:justify-center gap-6 sm:gap-x-12 lg:gap-x-20">
+                <div class="col-span-6 text-center">
+                    <h4 class="text-xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200">
+                        250+
+                    </h4>
+                    <h4 class="text-sm text-gray-600 dark:text-gray-400">
+                        Components
+                    </h4>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-span-6 text-center">
+                    <h4 class="text-xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200">
+                        160+
+                    </h4>
+                    <h4 class="text-sm text-gray-600 dark:text-gray-400">
+                        Starter Pages & Examples
+                    </h4>
+                </div>
+                <!-- End Col -->
+
+                <div class="col-start-4 col-span-6 text-center">
+                    <h4 class="text-xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200">
+                        10+
+                    </h4>
+                    <h4 class="text-sm text-gray-600 dark:text-gray-400">
+                        Tailwind CSS Plugins
+                    </h4>
+                </div>
+                <!-- End Col -->
+            </div>
+            <!-- End Grid -->
+        </div>
+        <!-- End Clients -->
+    </section>
+
+
     <!-- End agenda -->
     <section class="max-w-8xl p-4 md:p-8 md:pr-10 mx-auto">
 
         <div
             class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5
-         bg-slate-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
-          from-slate-900 to-gray-900">
+            bg-slate-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
+             from-firefly-900 to-firefly-900/80">
             <div class="md:p-12 p-4">
                 <!-- End Mission -->
                 <div
@@ -399,14 +403,16 @@
 
         <div
             class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5
-         bg-slate-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
-          from-slate-900 to-gray-900">
+            bg-slate-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
+             from-firefly-900 to-firefly-900/80">
+
             <livewire:team />
+
         </div>
     </section>
 
     <!-- agenda -->
-    <div class="max-w-[85rem] w-full px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-firefly-100 dark:bg-slate-900">
+    <div class="max-w-[85rem] w-full px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-firefly-100 dark:bg-firefly-900/50">
         <!-- Grid -->
         <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
 

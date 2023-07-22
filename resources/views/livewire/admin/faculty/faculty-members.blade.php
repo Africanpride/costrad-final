@@ -8,7 +8,7 @@
     <div class="grid grid-cols-2 md:grid-cols-4 gap-4  ">
 
 
-        <div class="aspect-square rounded-2xl  bg-gray-200 dark:bg-slate-900 text-gray-500 hover:ring-2 hover:ring-gray-300 hover:dark:ring-gray-700 flex justify-center items-center flex-col text-accent-400 text-sm
+        <div class="aspect-square rounded-2xl  bg-gray-200 dark:bg-firefly-900 text-gray-500 hover:ring-2 hover:ring-gray-300 hover:dark:ring-gray-700 flex justify-center items-center flex-col text-accent-400 text-sm
         hover:shadow hover:text-accent-500 hover:font-medium group cursor-pointer "
             wire:click='$emit("openModal", "admin.faculty.add-faculty")'>
             <span
@@ -35,7 +35,7 @@
             @endif --}}
 
             <div
-                class="aspect-square rounded-2xl  bg-gray-200 dark:bg-slate-900 text-gray-500 hover:ring-2 hover:ring-gray-300 hover:dark:ring-gray-700 flex justify-center items-center flex-col text-accent-400 text-sm
+                class="aspect-square rounded-2xl  bg-gray-200 dark:bg-firefly-900 text-gray-500 hover:ring-2 hover:ring-gray-300 hover:dark:ring-gray-700 flex justify-center items-center flex-col text-accent-400 text-sm
                 hover:shadow hover:text-accent-500 hover:font-medium group relative ">
 
                 <div class="absolute top-2 right-2 cursor-pointer" onclick="Livewire.emit('openModal', 'admin.faculty.delete-faculty', {{ json_encode([$faculty->id]) }})">

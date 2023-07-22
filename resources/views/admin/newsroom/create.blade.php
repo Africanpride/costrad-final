@@ -14,7 +14,7 @@
                         <div class="py-2">
                             <x-jet-label for="overview" value="{{ __('Publication Title') }}" />
                             <x-jet-input id="title" type="text" name="title" value=" {{ old('title') }}"
-                                class="mt-1 block w-full dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                                class="mt-1 block w-full dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                                 autocomplete placeholder="{{ old('title') }}" required />
 
                             <x-jet-input-error for="title" class="mt-2" />
@@ -26,7 +26,7 @@
                                 </label>
                                 <select id="category_id" name="category_id" aria-label="Category"
                                     class="form-select mt-1 block w-full rounded-md bg-gray-100 border-transparent
-                                        focus:border-blue-500 focus:bg-white focus:ring-0 dark:bg-slate-900 dark:border-gray-700
+                                        focus:border-blue-500 focus:bg-white focus:ring-0 dark:bg-firefly-900 dark:border-gray-700
                                         dark:text-gray-400">
                                     <option value="" selected disabled hidden>Select Category</option>
                                     @foreach ($categories as $category)
@@ -61,7 +61,7 @@
                             <x-jet-label for="overview" value="{{ __('Featured Image') }}" />
 
                             <input type="file" name="featured_image" id="large-file-input"
-                                class="block w-full border border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400
+                                class="block w-full border border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400
                             file:bg-transparent file:border-0
                             file:bg-gray-100 file:mr-4
                             file:py-3 file:px-4 file:sm:py-5
@@ -73,7 +73,7 @@
                         <div class="">
                             <x-jet-label for="overview" value="{{ __('Overview') }}" />
                             <textarea name="overview" id="overview" spellcheck="true"
-                                class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                                class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                                 placeholder="{{ __('News Overview') }}">{{ old('overview') }}</textarea>
 
                             <x-jet-input-error for="overview" class="mt-2" />
@@ -81,7 +81,7 @@
 
                         <div class="">
                             <textarea name="body" id="open-source-plugins" spellcheck="true"
-                                class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                                class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                                 placeholder="{{ __('News Content') }}">{{ old('body') }}</textarea>
 
 

@@ -71,7 +71,7 @@ md:backdrop-blur-none dark:bg-gray-900 text-sm  sticky top-0 inset-x-0  sm:justi
 
                 <div class="md:hidden">
                     <button type="button"
-                        class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-firefly-600 transition-all text-sm dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
+                        class="hs-collapse-toggle p-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-firefly-600 transition-all text-sm dark:bg-firefly-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
                         data-hs-collapse="#navbar-collapse-with-animation"
                         aria-controls="navbar-collapse-with-animation" aria-label="Toggle navigation">
                         <svg class="hs-collapse-open:hidden w-4 h-4" width="16" height="16" fill="currentColor"

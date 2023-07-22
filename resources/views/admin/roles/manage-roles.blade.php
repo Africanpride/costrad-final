@@ -6,7 +6,7 @@
         <div class="p-4 space-y-4">
 
             <!-- Jumbotron -->
-            <div class="p-6 shadow rounded-lg bg-firefly-50 dark:bg-slate-900 dark:text-white ">
+            <div class="p-6 shadow rounded-lg bg-firefly-50 dark:bg-firefly-900 dark:text-white ">
 
                 <div class="space-y-3">
                     <p class="max-w-7xl">

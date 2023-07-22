@@ -31,12 +31,12 @@
 </head>
 
 <body
-    class="bg-firefly-100 dark:bg-slate-900  scrollbar-thin
+    class="bg-firefly-100 dark:bg-firefly-900  scrollbar-thin
 scrollbar-thumb-firefly-800 dark:scrollbar-thumb-firefly-900 scrollbar-track-gray-300 overflow-y-scroll overflow-x-hidden">
 
 
     <main id="content" role="main"
-        class="bg-gray-50 dark:bg-slate-900 dark:text-gray-50 md:min-h-screen overflow-x-hidden ">
+        class="bg-gray-50 dark:bg-firefly-900 dark:text-gray-50 md:min-h-screen overflow-x-hidden ">
 
         {{ $slot }}
 

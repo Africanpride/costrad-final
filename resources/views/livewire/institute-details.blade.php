@@ -118,7 +118,7 @@
 
         <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
             <div
-                class="min-h-[600px] md:min-h-max bg-slate-500/10 border border-gray-300/10 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] dark:bg-black from-slate-900 mx-auto p-8 rounded-3xl space-y-5 text-left to-gray-900 py-16">
+                class="min-h-[600px] md:min-h-max bg-slate-500/10 border border-gray-300/10 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] dark:bg-black from-firefly-900 mx-auto p-8 rounded-3xl space-y-5 text-left to-firefly-900 py-16">
 
                 <img class="inline-block h-[4.975rem] w-[4.975rem] rounded-full ring-2 ring-white dark:ring-gray-800"
                     src="{{ $institute->institute_logo }}" alt="{{ $institute->name }}">
@@ -266,7 +266,7 @@
 
                 <div class="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
                     <div
-                        class="rounded-2xl bg-gray-300/40 dark:bg-blue-900/10 h-full py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
+                        class="rounded-2xl bg-gray-300/30 dark:bg-blue-900/10 h-full py-10 text-center ring-1 ring-inset ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
                         <div class="mx-auto max-w-xs px-8">
                             <p class="text-base font-bold text-gray-600 dark:text-gray-500">Pay once, own it
                                 forever
@@ -286,12 +286,6 @@
                                         class="uppercase">{{ $institute->acronym }}</span>
                                 </x-jet-button>
                             </div>
-                            {{-- <button
-                                class="mt-10 flex justify-center items-center w-full rounded-md bg-firefly-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-firefly-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-firefly-600 dark:bg-firefly-800 dark:hover:bg-firefly-700 dark:focus-visible:outline-firefly-800"
-                                data-hs-overlay="#payment-invoice">
-                                <span>{{ 'Enroll now!' }}</span>
-                                <x-lucide-arrow-right-circle class="w-6 h-6 text-current pl-2" />
-                            </button> --}}
 
                             <p class="mt-6 text-xs leading-5 text-gray-600 dark:text-gray-400">
                                 Gain knowledge that lasts a lifetime. Invoices and receipts
@@ -336,7 +330,7 @@
                             <!-- Close Button -->
                             <div class="absolute top-2 right-2">
                                 <button type="button"
-                                    class="py-1.5 px-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-xs dark:bg-slate-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
+                                    class="py-1.5 px-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-xs dark:bg-firefly-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
                                     data-hs-overlay="#payment-invoice">
                                     Close
                                 </button>

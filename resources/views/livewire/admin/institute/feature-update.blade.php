@@ -17,7 +17,7 @@
                     <label class=" font-medium text-gray-700 dark:text-gray-300 text-xs text-[0.7rem] flex justify-start">
                         Feature Title</label>
                     <input wire:model="title" id="title" type="text"
-                        class="py-2 px-4 pl-9 pr-16 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700
+                        class="py-2 px-4 pl-9 pr-16 block w-full border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700
                                         dark:text-gray-400"
                         placeholder="{{ __('eg. Access to COSTrAD Member resources
                         .') }}">
@@ -31,7 +31,7 @@
                         class=" font-medium text-gray-700 dark:text-gray-300 text-xs text-[0.7rem] flex justify-start">
                         Feature/Service description</label>
                     <textarea wire:model="description"
-                        class=" placeholder:py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                        class=" placeholder:py-3 px-4 block w-full border-gray-200 rounded-md text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                         rows="3">{{ old('description') }}</textarea>
                     @error('description')
                         <span class="text-red-500">{{ $message }}</span>

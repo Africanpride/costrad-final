@@ -1,6 +1,6 @@
 <div>
     <header
-        class="sticky top-0 inset-x-0 flex flex-wrap sm:justify-start sm:flex-nowrap  z-10 w-full bg-white border-b text-sm py-2.5 sm:py-4 dark:bg-black dark:border-slate-800 ">
+        class="sticky top-0 inset-x-0 flex flex-wrap sm:justify-start sm:flex-nowrap  z-10 w-full bg-white border-b text-sm py-2.5 sm:py-4 dark:bg-black dark:border-firefly-900 ">
         <nav class="flex basis-full justify-between items-center w-full mx-auto px-4 sm:px-6 md:px-8" aria-label="Global">
             <div class="mr-5 md:mr-8">
                 <a class="md:hidden  flex-none text-xl font-semibold dark:text-white" href="{{ route('home') }}"

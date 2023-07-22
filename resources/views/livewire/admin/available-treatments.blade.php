@@ -3,7 +3,7 @@
     <!-- Grid -->
     <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
         @forelse ($treatments as $treatment)
-            <div class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-slate-900 dark:border-gray-800">
+            <div class="group flex flex-col bg-white border shadow-sm rounded-xl hover:shadow-md transition dark:bg-firefly-900 dark:border-gray-800">
                 <div class="p-4 md:p-5">
                     <div class="flex justify-between items-center">
                         <div wire:click='$emit("openModal", "admin.treatment.update-treatment", {{ json_encode([$treatment]) }})' class="flex items-center cursor-pointer"  >

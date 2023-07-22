@@ -321,7 +321,7 @@
             </div>
 
             <!-- Jumbotron -->
-            <div class="p-6 shadow rounded-lg bg-firefly-50 dark:bg-slate-900 dark:text-white ">
+            <div class="p-6 shadow rounded-lg bg-firefly-50 dark:bg-firefly-900 dark:text-white ">
                 {{-- <h2 class="font-semibold text-3xl mb-5">Hello world!</h2> --}}
                 <p>
                     This is a simple hero unit, a simple jumbotron-style component for calling extra attention

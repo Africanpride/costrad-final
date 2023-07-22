@@ -14,7 +14,7 @@
                         <div class="">
                             <x-jet-label for="title" value="{{ __('Title') }}" spellcheck="true" />
                             <x-jet-input id="title" type="text" name="title"
-                                class="mt-1 block w-full dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                                class="mt-1 block w-full dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                                 autocomplete="{{ $newsroom->title }}"
                                 placeholder="{{ $newsroom->title ?? __('News Title.') }}"
                                 value="{{ old('title', $newsroom->title) }}" required />
@@ -25,7 +25,7 @@
                             <div class="w-2/4">
                                 <label for="hs-hidden-select" class="sr-only">Label</label>
                                 <select id="hs-hidden-select" name="category_id"
-                                    class="rounded-lg py-7 px-4 pr-9 block w-full border-gray-200 text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">
+                                    class="rounded-lg py-7 px-4 pr-9 block w-full border-gray-200 text-sm focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400">
                                     <option value="{{ $newsroom->category->id }}">Select News/Publication Category</option>
                                     @foreach ($categories as $category)
                                     <option value="{{  $category->id }}">{{ $category->title }}</option>
@@ -60,20 +60,20 @@
                             <x-jet-label for="overview" value="{{ __('Featured Image') }}" />
 
                             <input type="file" name="featured_image" id="large-file-input"
-                                class="block w-full border border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400
+                                class="block w-full border border-gray-200 shadow-sm rounded-md text-sm focus:z-10 focus:border-blue-500 focus:ring-blue-500 dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400
                             file:bg-transparent file:border-0
                             file:bg-gray-100 file:mr-4
                             file:py-3 file:px-4 file:sm:py-5
                             dark:file:bg-gray-700 dark:file:text-gray-400">
                             {{-- <x-jet-input id="featured_image" type="file" name="{{ $newsroom->featured_image }}"
-                                class="mt-1 block w-full dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"/> --}}
+                                class="mt-1 block w-full dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"/> --}}
 
                             <x-jet-input-error for="featured_image" class="mt-2" />
                         </div>
                         <div class="">
                             <x-jet-label for="overview" value="{{ __('Overview') }}" />
                             <textarea name="overview" id="overview" spellcheck="true"
-                                class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400"
+                                class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400"
                                 placeholder="{{ $newsroom->overview ?? __('News Overview') }}">{{ old('overview', optional($newsroom)->overview) }}</textarea>
 
                             <x-jet-input-error for="overview" class="mt-2" />
@@ -81,7 +81,7 @@
 
                         <div class="">
                             <textarea name="body" id="open-source-plugins" spellcheck="true"
-                                class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm dark:bg-slate-900 dark:border-gray-700 dark:text-gray-400">{{ old('body', optional($newsroom)->body) }}</textarea>
+                                class="py-3 px-4 block w-full border-gray-200 rounded-md text-sm dark:bg-firefly-900 dark:border-gray-700 dark:text-gray-400">{{ old('body', optional($newsroom)->body) }}</textarea>
 
 
                             <x-jet-input-error for="body" class="mt-2" />

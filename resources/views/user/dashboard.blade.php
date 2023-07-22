@@ -7,7 +7,7 @@
 
         <div class="px-4 py-6">
             <div class="max-w-8xl mx-auto">
-                <div class="bg-gray-200/50 dark:bg-slate-900 dark:text-white mb-5 p-8 rounded-3xl">
+                <div class="bg-gray-200/50 dark:bg-firefly-900 dark:text-white mb-5 p-8 rounded-3xl">
                     <h1 class="text-3xl font-bold mb-10 hidden">Messaging ID framework development for the marketing
                         branch</h1>
                     <div class="flex items-center justify-between">
