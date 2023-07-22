@@ -4,10 +4,10 @@ namespace App\Http\Livewire\Front;
 
 use Livewire\Component;
 
-class SectionHead extends Component
+class HelpContent extends Component
 {
     public function render()
     {
-        return view('livewire.front.section-head');
+        return view('livewire.front.help-content');
     }
 }

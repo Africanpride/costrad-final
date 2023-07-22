@@ -15,14 +15,14 @@
     </span>
 
     <div
-        class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-full hidden z-10 top-full right-0 md:w-[1200px] min-w-[15rem] bg-white md:shadow-2xl md:px-4 dark:bg-firefly-800 dark:divide-firefly-700 before:absolute before:-top-5 before:left-0 before:w-full before:h-5 ">
+        class="hs-dropdown-menu transition-[opacity,margin] duration-[0.1ms] md:duration-[150ms] hs-dropdown-open:opacity-100 opacity-0 w-full hidden z-10 top-full right-0 md:w-[1200px] min-w-[15rem] bg-white md:shadow-2xl md:px-4 dark:bg-firefly-900 dark:divide-firefly-700 before:absolute before:-top-5 before:left-0 before:w-full before:h-5 ">
         <div class="mt-5 md:mt-0">
             <div class="md:grid  md:grid-cols-3 gap-x-2 ">
 
                 <div class="flex flex-col mx-1 md:mx-0 py-2">
 
                     @foreach ($firstFour as $firstFourInstitutes)
-                        <a class="group flex gap-x-5 text-firefly-800 hover:bg-firefly-200/40 rounded-md p-4 dark:text-firefly-200 dark:hover:bg-firefly-900"
+                        <a class="group flex gap-x-5 text-firefly-800 hover:bg-firefly-200/40 rounded-md p-4 dark:text-firefly-200 dark:hover:bg-gray-950"
                             href="{{ route('institute.show', $firstFourInstitutes->slug) }}">
                             <img src="{{ $firstFourInstitutes->institute_logo }}" alt=""
                                 class="flex-shrink-0 w-12 h-12 mt-1">
@@ -43,7 +43,7 @@
 
                 <div class="flex flex-col mx-1 md:mx-0 py-2">
                     @foreach ($lastFour as $lastFourInstitutes)
-                        <a class="group flex items-center gap-x-5 text-firefly-800 hover:bg-firefly-200/40 rounded-md p-4 dark:text-firefly-200 dark:hover:bg-firefly-900"
+                        <a class="group flex items-center gap-x-5 text-firefly-800 hover:bg-firefly-200/40 rounded-md p-4 dark:text-firefly-200 dark:hover:bg-gray-950"
                             href="{{ route('institute.show', $lastFourInstitutes->slug) }}">
 
                             <img src="{{ $lastFourInstitutes->institute_logo }}" alt=""

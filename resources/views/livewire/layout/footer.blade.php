@@ -1,5 +1,3 @@
-
-
 <footer class="bg-white dark:bg-gray-900">
     <div class="container px-6 py-8 mx-auto">
         <div class="flex flex-col md:flex-row md:justify-between items-center ">
@@ -7,52 +5,54 @@
 
             <div class="flex flex-wrap justify-center mt-6 -mx-4">
                 <ul
-                class="flex flex-wrap items-center uppercase text-[9px] md:text-xs text-gray-700 sm:mb-0 dark:text-gray-400 space-x-4">
-                <li>
-                    <a href="{{ url('contact') }}">Contact</a>
-                </li>
-                <li>
-                    <a href="{{  url('about') }}">About </a>
-                </li>
-                <li>
-                    <a href="{{  url('help') }}">Help</a>
-                </li>
+                    class="flex flex-wrap items-center uppercase text-[9px] md:text-xs text-gray-700 sm:mb-0 dark:text-gray-400 space-x-4">
+                    <li>
+                        <a href="{{ url('contact') }}">Contact</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('about') }}">About </a>
+                    </li>
+                    <li>
+                        <a href="{{ url('help') }}">Help</a>
+                    </li>
 
-                <li>
-                    <a href="{{  url('privacy') }}">Privacy</a>
-                </li>
-                <li>
-                    <a href="{{  url('dmca') }}">DMCA</a>
-                </li>
-                <li>
-                    <a href="{{  url('terms') }}">Terms</a>
-                </li>
+                    <li>
+                        <a href="{{ url('privacy') }}">Privacy</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('dmca') }}">DMCA</a>
+                    </li>
+                    <li>
+                        <a href="{{ url('terms') }}">Terms</a>
+                    </li>
 
-                <li>
-                    <a href=" {{ url('accessibility') }}">Accessibility</a>
-                </li>
-                <li>
-                    <p id="open_preferences_center" class="cursor-pointer">Cookies</p>
-                </li>
+                    <li>
+                        <a href=" {{ url('accessibility') }}">Accessibility</a>
+                    </li>
+                    <li>
+                        <p id="open_preferences_center" class="cursor-pointer">Cookies</p>
+                    </li>
 
-            </ul>
+                </ul>
             </div>
 
         </div>
 
-        <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700 border-dashed" />
+        <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700 border-dashed " />
 
-        <div class="flex flex-col items-center sm:flex-row sm:justify-between">
-            <p class="text-sm text-gray-500 dark:text-gray-300">
+        <div class="flex flex-col items-center sm:flex-row sm:justify-between space-y-4">
+            <p class=" text-gray-500 dark:text-gray-300 text-[10px] md:text-xs">
                 <span class="block text-md  text-gray-700 sm:text-center dark:text-gray-400 ">&copy;
-                &MediumSpace;<a href="https://www.costrad.org/"
-                    class="font-bold dark:text-white ">{{ config('app.name') }}&MediumSpace;&trade;</a> All Rights
-                Reserved.
-            </span>
-        </p>
+                    &MediumSpace;<a href="https://www.costrad.org/"
+                        class="font-bold dark:text-white ">{{ config('app.name') }}&MediumSpace;&trade;</a> All Rights
+                    Reserved.
+                </span>
+            </p>
 
             <div class="flex -mx-2">
-                <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Reddit">
+                <a href="#"
+                    class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                    aria-label="Reddit">
                     <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -61,7 +61,9 @@
                     </svg>
                 </a>
 
-                <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Facebook">
+                <a href="#"
+                    class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                    aria-label="Facebook">
                     <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -70,7 +72,9 @@
                     </svg>
                 </a>
 
-                <a href="#" class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400" aria-label="Github">
+                <a href="#"
+                    class="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
+                    aria-label="Github">
                     <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
@@ -82,4 +86,3 @@
         </div>
     </div>
 </footer>
-

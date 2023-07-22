@@ -80,7 +80,7 @@ Route::get('/payment/callback', [App\Http\Controllers\PaymentController::class, 
 
 
 
-Route::get('pdf_invoice', [ViewController::class, 'pdf_invoice']);/*  */
+Route::get('pdf_invoice', [ViewController::class, 'pdf_invoice']);
 Route::get('terms', [ViewController::class, 'terms']);
 Route::get('help', [ViewController::class, 'help']);
 Route::get('topics', [ViewController::class, 'topics']);
@@ -96,7 +96,7 @@ Route::get('/', [ViewController::class, 'home'])->name('home');
 Route::get('news', [ViewController::class, 'news'])->name('news');
 Route::get('test4', function() {
     return view('test4');
-})->name('news')->middleware('auth');
+})->name('test4')->middleware('auth');
 
 
 

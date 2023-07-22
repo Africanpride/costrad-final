@@ -47,7 +47,7 @@ scrollbar-thumb-firefly-800 scrollbar-track-gray-300 overflow-x-hidden overflow-
     <div class="md:col-span-10 w-full overflow-x-hidden">
 
         <!-- Content -->
-        <div class="bg-gray-50 dark:bg-black w-full pr-2">
+        <div class="bg-gray-50 dark:bg-black w-full ">
             <!-- ========== HEADER ========== -->
             @livewire('layout.header')
             <!-- Sidebar Toggle -->

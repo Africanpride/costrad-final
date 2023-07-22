@@ -1,5 +1,5 @@
 <x-front-layout>
 
-    <livewire:front.section-head />
+    <livewire:front.help-content />
 
 </x-front-layout>
