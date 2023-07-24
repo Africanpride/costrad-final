@@ -17,7 +17,7 @@
 
         @forelse ($institutes as $institute)
             <a href="{{ route('institute.show', [$institute->slug]) }}"
-                class="relative  p-4 transition duration-300 z-10 before:absolute rounded-md hover:bg-gray-100/50 dark:bg-firefly-900 dark:hover:bg-firefly-900/50">
+                class="relative  p-4 transition duration-300 z-10 before:absolute rounded-md bg-gray-300/30 hover:bg-gray-200/50 dark:bg-firefly-900 dark:hover:bg-firefly-900/50">
                 <div class="flex text-left">
                     <img class="object-cover w-20 h-20 mr-4 rounded-full shadow-md "
                         src="{{ asset($institute->institute_logo) }}" alt="Person" />
