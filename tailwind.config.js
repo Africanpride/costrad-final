@@ -93,7 +93,7 @@ module.exports = {
         require('preline/plugin'),
         require('@tailwindcss/forms'),
         require('@tailwindcss/typography'),
-        // require('tailwind-scrollbar'),
+        require('tailwind-scrollbar'),
         require("tailwindcss-animate"),
         // require('flowbite/plugin')
 

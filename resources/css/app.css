@@ -188,7 +188,7 @@ html {
     height: 3em;
     line-height: 2em;
     text-align: center;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background: linear-gradient(90deg, #eab308, #f441a5, #ffeb3b, #1a608a);
     background-size: 300%;
     border-radius: 30px;
     z-index: 1;
@@ -217,7 +217,7 @@ html {
     right: -5px;
     bottom: -5px;
     z-index: -1;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #1a608a);
     background-size: 400%;
     border-radius: 35px;
     transition: 1s;
@@ -284,5 +284,32 @@ html {
 .bullets li {
   display: hidden !important;
 }
-
-
+/*
+.loader {
+    color: #fff;
+    font-family: Consolas, Menlo, Monaco, monospace;
+    font-weight: bold;
+    font-size: 20vh;
+    opacity: 0.7;
+  }
+  .loader span {
+    display: inline-block;
+    -webkit-animation: pulse 0.5s alternate infinite ease-in-out;
+            animation: pulse 0.5s alternate infinite ease-in-out;
+  }
+  .loader span:nth-child(odd) {
+    -webkit-animation-delay: 0.5s;
+            animation-delay: 0.5s;
+  }
+  @-webkit-keyframes pulse {
+    to {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+  }
+  @keyframes pulse {
+    to {
+      transform: scale(0.8);
+      opacity: 0.5;
+    }
+  } */

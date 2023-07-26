@@ -274,6 +274,8 @@ namespace App\Models{
  * @property int $category_id
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property-read \Illuminate\Database\Eloquent\Collection<int, \Cjmellor\Approval\Models\Approval> $approvals
+ * @property-read int|null $approvals_count
  * @property-read \App\Models\User $author
  * @property-read \App\Models\Category|null $category
  * @property-read mixed $frontend_url

@@ -161,7 +161,7 @@
 
     <!-- Sticky Share Group -->
     <div class="sticky bottom-6 inset-x-0 text-center">
-        <div class="inline-block bg-white shadow-md rounded-full py-3 px-4 dark:bg-gray-800">
+        <div class="inline-block bg-white shadow-md rounded-full py-3 px-4 dark:bg-gray-950">
             <div class="flex items-center gap-x-1.5">
 
                 <div class="hs-tooltip inline-block">

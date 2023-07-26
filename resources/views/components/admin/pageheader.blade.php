@@ -1,12 +1,10 @@
-<div style="background-image: url('{{ asset('images/main/profile_banner.svg') }}');     background-repeat: repeat-y;
-background-position-x: right;   background-size: auto;
-background-position-y: center;   background-origin: content-box;
+<div style="background-image: url('http://localhost:8000/images/main/profile_banner.svg');background-repeat: repeat-y;background-position-x: right;background-size: auto;background-position-y: center;/* background-origin: content-box; */;
 
 "
     {{ $attributes->merge([
         'class' => 'overflow-hidden relative  dark:text-firefly-50
         flex items-center justify-between my-5 bg-[#0E2A47]
-        p-10 md:p-14 shadow rounded-lg',
+        p-10 md:p-14 shadow rounded-lg bg-repeat-y bg-cover bg-repeat',
     ]) }}>
 
     <div class="flex  items-center z-10 tracking-wider	 ">

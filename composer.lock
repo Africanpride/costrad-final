@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "93a203b227f14e5a2485287cf3e6eee1",
+    "content-hash": "4a658474d7905bae32168f74e737f6e8",
     "packages": [
         {
             "name": "arielmejiadev/larapex-charts",
@@ -874,6 +874,73 @@
                 }
             ],
             "time": "2023-01-15T23:59:01+00:00"
+        },
+        {
+            "name": "cjmellor/approval",
+            "version": "v1.1.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/cjmellor/approval.git",
+                "reference": "c532168550921f98483a185663ceac2736f93064"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/cjmellor/approval/zipball/c532168550921f98483a185663ceac2736f93064",
+                "reference": "c532168550921f98483a185663ceac2736f93064",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^9.0|^10.0",
+                "php": "^8.1",
+                "spatie/laravel-package-tools": "^1.14.0"
+            },
+            "require-dev": {
+                "laravel/pint": "^1.0",
+                "nunomaduro/collision": "^6.0",
+                "orchestra/testbench": "^7.0|^8.0",
+                "pestphp/pest": "^1.21",
+                "pestphp/pest-plugin-laravel": "^1.1",
+                "phpunit/phpunit": "^9.5"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Cjmellor\\Approval\\ApprovalServiceProvider"
+                    ],
+                    "aliases": {
+                        "Approval": "Cjmellor\\Approval\\Facades\\Approval"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Cjmellor\\Approval\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Chris Mellor",
+                    "email": "cmellor@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Approve or Deny new Model data before it is persisted",
+            "homepage": "https://github.com/cjmellor/approval",
+            "keywords": [
+                "approval",
+                "cjmellor",
+                "laravel"
+            ],
+            "support": {
+                "issues": "https://github.com/cjmellor/approval/issues",
+                "source": "https://github.com/cjmellor/approval/tree/v1.1.5"
+            },
+            "time": "2023-06-25T16:30:39+00:00"
         },
         {
             "name": "dasprid/enum",

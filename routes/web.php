@@ -94,7 +94,7 @@ Route::get('our-process', [ViewController::class, 'ourProcess']);
 Route::get('institutes', [ViewController::class, 'institutes']);
 Route::get('/', [ViewController::class, 'home'])->name('home');
 Route::get('news', [ViewController::class, 'news'])->name('news');
-Route::get('test4', function() {
+Route::get('test4', function () {
     return view('test4');
 })->name('test4')->middleware('auth');
 
@@ -141,7 +141,7 @@ Route::middleware(['auth', config('jetstream.auth_session'), 'setNewPassword'])-
 
 
 
-    Route::get('invoices', function () {
+Route::get('invoices', function () {
 
         $myInvoices = Invoice::whereParticipantId(Auth::user()->id)->with('transactions', 'institute')->get();
         // dd($myInvoices);

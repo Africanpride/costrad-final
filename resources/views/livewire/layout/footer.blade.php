@@ -1,4 +1,4 @@
-<footer class="bg-gray-100 dark:bg-firefly-900 border border-t border-gray-400/10">
+<footer class="bg-gray-100 dark:bg-firefly-900 border border-t border-gray-600/10">
     <div class="container px-6 py-8 mx-auto">
         <div class="flex flex-col md:flex-row md:justify-between items-center ">
             <x-admin.branding />
@@ -38,7 +38,7 @@
 
         </div>
 
-        <hr class="my-6 border-gray-200 md:my-10 dark:border-gray-700 border-dashed " />
+        <hr class="my-6 border-gray-300 md:my-10  dark:border-gray-800 border-dashed " />
 
         <div class="flex flex-col items-center sm:flex-row sm:justify-between space-y-4">
             <p class=" text-gray-500 dark:text-gray-300 text-[10px] md:text-xs">

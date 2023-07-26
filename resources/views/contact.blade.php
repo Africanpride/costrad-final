@@ -1,63 +1,37 @@
 <x-front-layout>
-
-    <section class="relative z-20 overflow-hidden p-6  pt-20 pb-5 lg:pt-[120px]">
+    <div class="space-y-5 z-0">
+    <section class="relative z-20 overflow-hidden pb-4 pt-24 ">
         <div class="container mx-auto">
             <div class="-mx-4 flex flex-wrap">
                 <div class="w-full px-4">
-                    <div class="mx-auto mb-[10px] max-w-[920px] text-center lg:mb-50 space-y-3">
-                        <div class="inline-block">
-                            <div class="card-top-text">
-                                <span>FAQ: Any Questions? Answered</span>
-                                <svg class="text-current w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <polyline points="12 16 16 12 12 8"></polyline>
-                                    <line x1="8" y1="12" x2="16" y2="12"></line>
-                                </svg>
-                            </div>
-                        </div>
+                    <div class="mx-auto mb-[60px] max-w-[920px] text-center lg:mb-20 space-y-3">
 
-                        <p class="text-lg leading-relaxed text-body-color sm:text-xl sm:leading-relaxed">
-                            We've made it easy for you to reach out to us whenever you need to. Our form is also
-                            available
-                            24/7 and our team is always ready to assist you. So if you have any questions, concerns, or
-                            just want to chat, we encourage you to reach out to us today.
-                        </p>
+                        <x-top-title>
+                            FAQ: Any Questions? Answered
+                            <x-slot name="icon">
+                                <x-lucide-globe class="dark:text-white  w-5 h-5 " />
+                            </x-slot>
+
+                            <x-slot name="paragraph">
+                                We've made it easy for you to reach out to us whenever you need to. Our form is also
+                                available
+                                24/7 and our team is always ready to assist you. So if you have any questions, concerns, or
+                                just want to chat, we encourage you to reach out to us today.
+
+                            </x-slot>
+
+                        </x-top-title>
                     </div>
                 </div>
             </div>
-
+        </div>
+    </section>
+    <section class="relative z-20 overflow-hidden p-6 ">
 
             <!-- Card Section -->
-            <div class=" px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+            <div class=" px-4 py-8 sm:px-6 lg:px-8 mx-auto">
                 <!-- Grid -->
-                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
-                    <!-- Card -->
-                    <a class="group flex flex-col bg-white border border-gray-400/40 shadow-sm rounded-xl hover:shadow-md transition dark:bg-firefly-900 dark:border-gray-800"
-                        href="#">
-                        <div class="p-4 md:p-5">
-                            <div class="flex">
-                                <svg class="mt-1 shrink-0 w-5 h-5 text-gray-800 dark:text-gray-200"
-                                    xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                                    viewBox="0 0 16 16">
-                                    <path
-                                        d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z" />
-                                </svg>
-
-                                <div class="grow ml-5">
-                                    <h3
-                                        class="group-hover:text-firefly-600  font-semibold text-gray-800 dark:group-hover:text-gray-400 dark:text-gray-200">
-                                        Ask our community
-                                    </h3>
-                                    <p class="text-sm text-gray-500">
-                                        Get help from 40k+ Preline users
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- End Card -->
+                <div class="grid  md:grid-cols-3 gap-4 sm:gap-6">
 
                     <!-- Card -->
                     <a class="group flex flex-col bg-white border border-gray-400/40 shadow-sm rounded-xl hover:shadow-md transition dark:bg-firefly-900 dark:border-gray-800"
@@ -149,7 +123,7 @@
             </div>
             <!-- End Card Section -->
 
-            <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+            <hr class="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700/20">
 
 
             <div class="flex flex-col min-h-screen ">
@@ -473,9 +447,6 @@
         </div>
     </section>
 
-
-
-
     @push('scripts')
         <script>
             function callbackThen(response) {
@@ -499,8 +470,11 @@
             'callback_then' => 'callbackThen',
             'callback_catch' => 'callbackCatch',
         ]) !!}
+</div>
 
-        {{-- 123456789 --}}
+
+
+
     @endpush
 
 </x-front-layout>

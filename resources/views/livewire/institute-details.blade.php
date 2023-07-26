@@ -51,18 +51,18 @@
             <div class="{{ $isMobile ? '' : 'kenburns' }} min-h-[55vh] bg-center bg-cover bg-no-repeat rounded-3xl md:min-h-[85vh] relative"
                 style="background-image: url('{{ $institute->featured_image }}');">
 
-                <div class="absolute bottom-0 left-0 max-w-xl md:left-auto md:mx-0 md:text-left mx-auto p-4 right-0">
+                <div class="absolute bottom-0 left-0 max-w-screen-2xl  md:left-auto md:mx-0 md:text-left mx-auto p-4 right-0">
                     <!-- Card -->
                     <div
-                        class="prose dark:prose-invert px-5 py-4
-                         prose-a:text-firefly-500 bg-white dark:bg-gray-900 space-y-4  rounded-2xl shadow-2xl">
+                        class="prose dark:prose-invert px-6 py-5
+                         prose-a:text-firefly-500 bg-white dark:bg-firefly-900 space-y-4  rounded-2xl shadow-2xl">
                         <div class="text-sm font-bold flex justify-between items-center">
                             <div> <span class="uppercase ">{{ $institute->acronym }}</span>{{ __(': A Critical Mandate.') }}</div>
                             <div class="text-gradient__teal">{{ $institute->duration }}, {{ now()->format('Y') }}</div>
                         </div>
 
                         <div
-                            class="hidden justify-between items-center dark:text-gray-200 font-bold text-gray-800 text-left text-sm">
+                            class="hidden justify-between items-center dark:text-gray-200 font-extrabold text-gray-800 text-left text-sm">
                             <h3 class="hidden md:flex  ">
                                 <span class="uppercase ">{{ $institute->acronym }}</span>
                                 : A Critical Mandate.
@@ -71,9 +71,9 @@
                             </div>
                         </div>
 
-                        <div class="my-2 text-gray-800 dark:text-gray-200 text-xs md:text-left line-clamp-6 md:line-clamp-none">
+                        <div class="my-2 text-gray-800 dark:text-gray-200 text-xs md:text-justify line-clamp-6 md:line-clamp-none">
 
-                            <span class="text-xs  ">{!! $institute->overview !!}</span>
+                            <span class="text-xs font-extralight	 ">{!! $institute->overview !!}</span>
 
                         </div>
 
@@ -118,19 +118,19 @@
 
         <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
             <div
-                class="min-h-[600px] md:min-h-max bg-slate-500/10 border border-gray-300/10 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] dark:bg-black from-firefly-900 mx-auto p-8 rounded-3xl space-y-5 text-left to-firefly-900 py-16">
+                class="min-h-[600px] md:min-h-max bg-firefly-500/10 border border-gray-300/10 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] dark:bg-black from-firefly-900 mx-auto p-8 rounded-3xl space-y-5 text-left to-firefly-900 py-16">
 
                 <img class="inline-block h-[4.975rem] w-[4.975rem] rounded-full ring-2 ring-white dark:ring-gray-800"
                     src="{{ $institute->institute_logo }}" alt="{{ $institute->name }}">
                 <div class="max-w-xl">
                     <div
-                        class="bg-gradient-to-r from-gray-200 to-white/0 h-0.5 mt-6 dark:from-gray-700 dark:to-slate-900/0">
+                        class="bg-gradient-to-r from-gray-200 to-white/0 h-0.5 mt-6 dark:from-gray-700 dark:to-firefly-900/0">
                         <div class="bg-gray-300 w-[4.975rem] h-0.5"></div>
                     </div>
                 </div>
                 <h2 class="mt-5 font-semibold text-sky-500 text-gradient1">{{ __('Overview') }}</h2>
                 <p
-                    class="mt-4 gap-3 text-md md:text-3xl sm:text-xl text-slate-900 font-extrabold tracking-tight dark:text-slate-50 ">
+                    class="mt-4 gap-3 text-md md:text-3xl sm:text-xl text-firefly-900 font-extrabold tracking-tight dark:text-firefly-50 ">
                     <span>{{ $institute->name }}:</span>
                     <span class="text-gradient1">
                         @if ($institute->acronym == 'costrad')
@@ -254,7 +254,7 @@
                         @foreach ($institute->services as $service)
                             <li class="flex gap-x-3">
                                 <button
-                                    class="btn  h65 w-6 rounded-full bg-gray-400/40 p-0 font-medium text-slate-800 hover:bg-slate-200 hover:shadow-lg hover:shadow-slate-200/50 focus:bg-slate-200 focus:shadow-lg focus:shadow-slate-200/50 active:bg-slate-200/80 dark:bg-navy-500 dark:text-navy-50 dark:hover:bg-navy-450 dark:hover:shadow-navy-450/50 dark:focus:bg-navy-450 dark:focus:shadow-navy-450/50 dark:active:bg-navy-450/90  grid place-items-center ">
+                                    class="btn  h65 w-6 rounded-full bg-gray-400/40 p-0 font-medium text-firefly-800 hover:bg-firefly-200 hover:shadow-lg hover:shadow-firefly-200/50 focus:bg-firefly-200 focus:shadow-lg focus:shadow-firefly-200/50 active:bg-firefly-200/80 dark:bg-navy-500 dark:text-navy-50 dark:hover:bg-navy-450 dark:hover:shadow-navy-450/50 dark:focus:bg-navy-450 dark:focus:shadow-navy-450/50 dark:active:bg-navy-450/90  grid place-items-center ">
                                     <x-lucide-check class="h-5 w-5 text-current dark:text-white" />
                                 </button>
                                 <span class="text-gray-900 dark:text-gray-300">{{ $service }}</span>
@@ -322,7 +322,7 @@
                 <div class="max-w-[85rem] px-4 sm:px-6 lg:px-8 mx-auto my-4 sm:my-10">
 
                     <div id="payment-invoice"
-                        class="hs-overlay hs-overlay-open:translate-x-0 hidden translate-x-full fixed top-0 right-0 transition-all duration-300 transform h-full max-w-md w-full z-[60] bg-white border-r dark:bg-gray-800 dark:border-gray-700"
+                        class="hs-overlay hs-overlay-open:tranfirefly-x-0 hidden tranfirefly-x-full fixed top-0 right-0 transition-all duration-300 transform h-full max-w-md w-full z-[60] bg-white border-r dark:bg-gray-800 dark:border-gray-700"
                         tabindex="-1">
                         <div style="background-image: url('{{ asset('images/main/abstract-bg-1.svg') }}');  background-repeat: no-repeat;
               background-size: auto 300px; "
@@ -330,7 +330,7 @@
                             <!-- Close Button -->
                             <div class="absolute top-2 right-2">
                                 <button type="button"
-                                    class="py-1.5 px-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-xs dark:bg-firefly-900 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
+                                    class="py-1.5 px-2 inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-xs dark:bg-firefly-900 dark:hover:bg-firefly-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800"
                                     data-hs-overlay="#payment-invoice">
                                     Close
                                 </button>
@@ -423,7 +423,7 @@
                                     </li>
 
                                     <li
-                                        class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-semibold bg-gray-50 border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-slate-800 dark:border-gray-700 dark:text-gray-200">
+                                        class="inline-flex items-center gap-x-2 py-3 px-4 text-sm font-semibold bg-gray-50 border text-gray-800 -mt-px first:rounded-t-lg first:mt-0 last:rounded-b-lg dark:bg-firefly-800 dark:border-gray-700 dark:text-gray-200">
                                         <div class="flex gap-x-2 items-center justify-between w-full ">
                                             <span>Total Amount Due</span>
                                             <span>GHS {{ $institute->local_currency }}</span>
@@ -435,7 +435,7 @@
                             <!-- Button -->
                             <div class="mt-5 flex justify-between gap-x-2">
                                 <a
-                                    class="py-1 px-3 w-full inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-gray-800 dark:hover:bg-slate-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
+                                    class="py-1 px-3 w-full inline-flex justify-center items-center gap-2 rounded-md border font-medium bg-white text-gray-700 shadow-sm align-middle hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-white focus:ring-blue-600 transition-all text-sm dark:bg-gray-800 dark:hover:bg-firefly-800 dark:border-gray-700 dark:text-gray-400 dark:hover:text-white dark:focus:ring-offset-gray-800">
                                     <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" width="16"
                                         height="16" fill="currentColor" viewBox="0 0 16 16">
                                         <path

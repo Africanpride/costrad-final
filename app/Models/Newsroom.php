@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Cjmellor\Approval\Concerns\MustBeApproved;
 use Spatie\Image\Manipulations;
 use Spatie\MediaLibrary\HasMedia;
 use Illuminate\Database\Eloquent\Model;
@@ -15,7 +16,7 @@ use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 class Newsroom extends Model implements HasMedia
 {
 
-    use HasFactory, HasUuids, InteractsWithMedia;
+    use HasFactory, MustBeApproved, HasUuids, InteractsWithMedia;
 
     protected $fillable = ['title', 'slug', 'active', 'overview', 'body','like', 'featured_image', 'user_id'];
 

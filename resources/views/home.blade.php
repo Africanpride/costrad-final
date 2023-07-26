@@ -8,7 +8,7 @@
             <div
                 class="absolute bottom-0 left-0 right-0 max-w-md text-center mx-auto p-6 md:left-auto md:text-left md:mx-0">
                 <!-- Card -->
-                <div class="bg-white dark:bg-gray-900 flex-col gap-4 inline-flex justify-between md:p-4 px-2 rounded-2xl shadow-2xl">
+                <div class="bg-white dark:bg-firefly-900 flex-col gap-4 inline-flex justify-between md:p-4 px-2 rounded-2xl shadow-2xl">
                     <div class="hidden md:block">
                         <h3 class=" font-bold text-gray-800 text-sm dark:text-gray-200"> COSTrAD: A Critical Mandate.
                         </h3>
@@ -38,23 +38,23 @@
 
     <section class="w-full items-center flex flex-col justify-center py-8">
         <svg width="317" height="120" viewBox="0 0 317 120" fill="none">
-            <path transform="translate(-36,0)" d="m197.32283 25.03412l-0 100.48032" stroke="gray" stroke-opacity="0.2">
+            <path transform="tranfirefly(-36,0)" d="m197.32283 25.03412l-0 100.48032" stroke="gray" stroke-opacity="0.2">
             </path>
-            <path transform="translate(-36,0)" d="m197.32283 25.03412l-0 100.48032" stroke="url(#pulse-1)"
+            <path transform="tranfirefly(-36,0)" d="m197.32283 25.03412l-0 100.48032" stroke="url(#pulse-1)"
                 stroke-linecap="round" stroke-width="2"></path>
             <path d="m197.32283 25.03412-0 20" stroke="gray"
-                style="transform: translateX(-36px) translateY(118.724px); transform-origin: 197.323px 35.0341px;"
+                style="transform: tranfireflyX(-36px) tranfireflyY(118.724px); transform-origin: 197.323px 35.0341px;"
                 transform-origin="197.3228302001953px 35.034119606018066px"></path>
         </svg>
         <h2
-            class="mt-4 max-w-5xl text-slate-900 text-lg md:text-5xl tracking-tight font-bold  font-['inter'] uppercase prominent-titles">
-            ...doing the seemingly impossible.
+            class="mt-4 max-w-6xl text-firefly-900 text-lg md:text-5xl tracking-tight  font-bold  font-['inter'] uppercase prominent-titles">
+            ... doing the seemingly impossible
         </h2>
         {{-- <h2
-            class=" text-slate-800 px-5 text-gradient1 inline-block mt-5 text-3xl md:text-4xl font-extrabold  bg-clip-text bg-gradient-to-l from-firefly-600 to-violet-500 text-transparent dark:from-firefly-400 dark:to-violet-400 uppercase">
+            class=" text-firefly-800 px-5 text-gradient1 inline-block mt-5 text-3xl md:text-4xl font-extrabold  bg-clip-text bg-gradient-to-l from-firefly-600 to-violet-500 text-transparent dark:from-firefly-400 dark:to-violet-400 uppercase">
             ...doing the seemingly impossible.
         </h2> --}}
-        <span class="md:text-lg text-gray-400 text-center mt-2 px-6 sm:px-0">
+        <span class="md:text-lg font-extrabold text-gray-400 dark:text-white text-center mt-2 px-6 sm:px-0">
             Explore what COSTrAD can help you achieve.
         </span>
     </section>
@@ -63,12 +63,12 @@
 
         <div
             class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5
-            bg-slate-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
+            bg-firefly-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
              from-firefly-900 to-firefly-900/80">
 
-            <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-                <div class="grid items-stretch gap-y-10 md:grid-cols-2 md:gap-x-8">
-                    <div class="relative grid grid-cols-2 gap-4 mt-10 md:mt-0 py-12">
+            <div class="px-4 mx-auto max-w-8xl sm:px-6 lg:px-8">
+                <div class="grid items-stretch gap-y-10 md:grid-cols-2 md:gap-x-6">
+                    <div class="relative grid grid-cols-2 gap-4 mt-10 md:mt-0 py-12 h-auto">
                         <div class="overflow-hidden aspect-w-3 aspect-h-4 rounded-2xl">
                             <img class="object-cover object-top origin-top scale-150 "
                                 src="{{ asset('images/main/leader2.jpg') }}" alt="" />
@@ -82,7 +82,7 @@
 
                         </div>
 
-                        <div class="absolute -translate-x-1/2 left-1/2 -top-2 ">
+                        <div class="absolute -translate-x-1/2 left-[50%]  ">
                             <img class="w-32 h-32 rotating" src="{{ asset('images/main/round-text-costrad.png') }}"
                                 alt="" />
                         </div>
@@ -91,11 +91,11 @@
                     <div class="flex flex-col items-start justify-center md:px-8 space-y-6 text-left ">
 
                         <h2
-                            class="uppercase  text-slate-800 text-gradient1 inline-block mt-5 text-2xl md:text-3xl font-extrabold  bg-clip-text bg-gradient-to-l from-firefly-600 to-violet-500 text-transparent dark:from-firefly-400 dark:to-violet-400 ">
+                            class="uppercase font-['anton'] text-2xl md:text-5xl leading-tight tracking-tight text-gray-900  bg-clip-text bg-gradient-to-l from-firefly-700 to-firefly-900 text-transparent dark:from-yellow-500 dark:to-firefly-700 ">
                             The Vital Role of Leadership Training Today
                         </h2>
-                        <p class="hidden">
-                            At COSTrAD, You would find out more reasons why leadership training is essential and how
+                        <p>
+                            At the <span >College of Systainable Transformation and Development COSTrAD</span>, You would find out more reasons why leadership training is essential and how
                             leadership impacts family, governance, economy and every aspect of society. We teach you
                             the necessary skills and qualities to effectively lead and manage people, organizations,
                             and systems. Leaders must possess strong communication, decision-making, and
@@ -130,7 +130,7 @@
 
         <div
             class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5
-         bg-slate-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
+         bg-firefly-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
           from-firefly-900 to-firefly-900/80">
 
             <livewire:what-is-costrad />
@@ -142,7 +142,7 @@
 
         <div
             class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5
-         bg-slate-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
+         bg-firefly-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
          from-firefly-900 to-firefly-900/80">
             <livewire:institutes-card />
 
@@ -153,14 +153,14 @@
     <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
         <div
             class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5 p-4
-         bg-slate-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
+         bg-firefly-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
          from-firefly-900 to-firefly-900/80">
             <div class="lg:px-8 max-w-8xl md:my-16 mx-auto px-4 space-y-5 text-center">
                 <h2
-                    class="  text-slate-900 text-3xl sm:text-5xl tracking-tight font-bold  font-['inter'] uppercase prominent-titles">
+                    class="  text-firefly-900 text-3xl sm:text-5xl tracking-tight font-bold  font-['inter'] uppercase prominent-titles">
                     News & Publications</h2>
                 <p class="my-2 md:text-2xl font-bold
-                text-slate-800 md:px-5 dark:text-white">
+                text-firefly-800 md:px-5 dark:text-white">
                     Providing valuable resources for researchers and analysts keen on staying up-to-date with the latest
                     developments in the 8-spheres of society.
                 </p>
@@ -256,13 +256,13 @@
                 </div>
 
                 <div
-                    class="absolute bottom-12 -left-20 -z-[1] w-48 h-48 bg-gradient-to-b from-orange-500 to-white p-px rounded-lg dark:to-slate-900">
-                    <div class="bg-white w-48 h-48 rounded-lg dark:bg-slate-900"></div>
+                    class="absolute bottom-12 -left-20 -z-[1] w-48 h-48 bg-gradient-to-b from-orange-500 to-white p-px rounded-lg dark:to-firefly-900">
+                    <div class="bg-white w-48 h-48 rounded-lg dark:bg-firefly-900"></div>
                 </div>
 
                 <div
                     class="absolute -top-12 -right-20 -z-[1] w-48 h-48 bg-gradient-to-t from-blue-600 to-cyan-400 p-px rounded-full">
-                    <div class="bg-white w-48 h-48 rounded-full dark:bg-slate-900"></div>
+                    <div class="bg-white w-48 h-48 rounded-full dark:bg-firefly-900"></div>
                 </div>
             </div>
         </div>
