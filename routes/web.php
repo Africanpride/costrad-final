@@ -65,7 +65,28 @@ Route::post('payment/installment-payment/{institute}/{invoice}', function ($inst
     ]);
 })->name('installment-payment')->middleware('auth');
 
+Route::get('testCustomer' , function() {
+    $reference = '0zKDjBJ0D9lzWoV3be8oN4FVb'; // Replace this with the actual reference value
 
+    $secretKey = env('PAYSTACK_SECRET_KEY');
+
+    $response = Http::withHeaders([
+        'Authorization' => 'Bearer ' . $secretKey,
+    ])->get('https://api.paystack.co/transaction/verify/' . $reference);
+
+    // Check if the request was successful (status code 2xx)
+    if ($response->successful()) {
+        $responseData = $response->json();
+
+        // Process the $customers array containing the list of customers
+        dd($responseData);
+    } else {
+        // Handle the case when the request was not successful
+        $errorMessage = $response->body();
+        // Handle the error message appropriately
+        dd($errorMessage);
+    }
+});
 
 Route::post('/pay', [App\Http\Controllers\PaymentController::class, 'redirectToGateway'])
     ->name('pay')
