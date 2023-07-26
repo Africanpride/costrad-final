@@ -1,12 +1,12 @@
 <x-front-layout>
 
-    <div class="space-y-5">
+    <div class="space-y-4">
 
-        <section class="relative z-20 overflow-hidden p-6  pt-20 pb-12 lg:pt-[120px] lg:pb-[90px]">
+        <section class="relative z-20 overflow-hidden p-4  pt-20 pb-8 md:pt-[120px] md:pb-[70px]">
             <div class="container mx-auto">
                 <div class="-mx-4 flex flex-wrap">
                     <div class="w-full px-4">
-                        <div class="mx-auto mb-[60px] max-w-[920px] text-center lg:mb-20 space-y-3">
+                        <div class="mx-auto mb-[60px] max-w-[920px] text-center md:mb-16 space-y-3">
 
                             <x-top-title>
                                 COSTrAD: A Leadership Development Initiative
@@ -33,13 +33,13 @@
 
         </section>
 
-        <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
+        <section class="max-w-8xl p-4 md:px-6 mx-auto h-auto">
 
             <div class="relative overflow-hidden rounded-2xl bg-cover "
                 style="background-image: url('http://localhost:8000/images/main/lecture_in_progress.jpg');">
 
 
-                <div class="relative z-10 py-8 shadow-2xl  p-4 md:p-8 md:pr-10 mx-auto ">
+                <div class="relative z-10 py-8 shadow-2xl  p-4 md:p-8 mx-auto ">
                     <div class="py-10">
                         <div class="text-center mx-auto ">
                             <span
@@ -84,17 +84,17 @@
 
         <!-- agenda -->
         <section
-            class="max-w-[85rem] w-full px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-gray-100 dark:bg-firefly-900">
+            class="max-w-8xl w-full px-4 py-10 md:px-8 md:py-10 mx-auto bg-gray-100 dark:bg-firefly-900">
             <!-- Grid -->
             <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 ">
                 <div>
 
-                    <img class="rounded-2xl h-auto md:h-['650px']" src="{{ asset('images/main/lecture_hall.jpg') }}"
+                    <img class="rounded-2xl h-auto md:h-['90vh']" src="{{ asset('images/main/lecture_hall.jpg') }}"
                         alt="Costrad on leadership">
 
                     <!-- End Col -->
                 </div>
-                <div class="mt-5 sm:mt-10 lg:mt-0">
+                <div class="mt-5 sm:mt-10 md:mt-0">
                     <div class="space-y-6 sm:space-y-8">
                         <!-- Title -->
                         <div class="space-y-2 md:space-y-4">
@@ -288,20 +288,20 @@
         </section>
 
         <!-- End agenda -->
-        <section class="max-w-8xl p-4 md:p-8 md:pr-10 mx-auto">
+        <section class="max-w-8xl p-4 md:p-8 mx-auto">
 
             <div
-                class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5
+                class="  mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5
             bg-slate-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
              from-firefly-900 to-firefly-900/80">
                 <div class="md:p-12 p-4">
                     <!-- End Mission -->
                     <div
-                        class="max-w-10xl md:max-w-6xl mx-auto relative text-center px-4 sm:px-6 lg:px-8 py-10 md:py-24 space-y-3">
+                        class="max-w-10xl md:max-w-6xl mx-auto relative text-center px-4 sm:px-6 md:px-8 py-10 md:py-24 space-y-3">
                         <div
                             class="inline-block bg-gradient-to-tl from-firefly-600 via-transparent to-purple-400 p-px rounded-md mb-3">
                             <div
-                                class="bg-white rounded-md py-1.5 px-3 text-xl font-bold md:text-2xl lg:text-3xl lg:leading-tight dark:bg-slate-900">
+                                class="bg-white rounded-md py-1.5 px-3 text-xl font-bold md:text-3xl md:leading-tight dark:bg-slate-900">
 
                                 <span
                                     class="bg-clip-text bg-gradient-to-tl from-firefly-600 to-purple-400 text-transparent">
@@ -392,11 +392,11 @@
         </section>
         <!-- agenda -->
         <section
-            class="max-w-[85rem] w-full px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto bg-gray-100  dark:bg-firefly-900/50">
+            class="max-w-[85rem] w-full px-4 py-10 sm:px-6 md:px-8 md:py-14 mx-auto bg-gray-100  dark:bg-firefly-900/50">
             <!-- Grid -->
             <div class="md:grid md:grid-cols-2 md:items-center md:gap-12 xl:gap-32">
 
-                <div class="my-5 sm:mt-10 lg:mt-0">
+                <div class="my-5 sm:mt-10 md:mt-0">
                     <div class="space-y-6 sm:space-y-8">
                         <!-- Title -->
                         <div class="space-y-2 md:space-y-4">

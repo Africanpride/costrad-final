@@ -1,12 +1,13 @@
+
+
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" class="light scroll-smooth">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+    {!! SEOMeta::generate() !!}
+    {{-- {!! OpenGraph::generate() !!} --}}
+    {!! Twitter::generate() !!}
 
-    <title>{{ config('app.name', 'College of Sustainable Transformation & Development') }}</title>
 
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('images/favicon/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('images/favicon/favicon-32x32.png') }}">
@@ -16,16 +17,11 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    {{-- <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.js'></script> --}}
 
-    <!-- Scripts -->
+
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-
-    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.4/index.global.min.js'></script>
-
-
     @livewireStyles
-
-    <!-- Required Meta Tags Always Come First -->
     @stack('scripts')
 </head>
 
