@@ -6,7 +6,7 @@
 
 
     <div class="px-4 py-6">
-        <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
+        <section class="max-w-8xl p-4 md:px-8   mx-auto h-auto">
 
             <div
                 class=" md:p-24 p-5 mx-auto rounded-2xl border  border-gray-300/10 text-start space-y-8

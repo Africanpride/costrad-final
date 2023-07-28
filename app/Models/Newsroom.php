@@ -21,12 +21,12 @@ class Newsroom extends Model implements HasMedia
     protected $fillable = ['title', 'slug', 'active', 'overview', 'body','like', 'featured_image', 'user_id'];
 
 
-    public function getRouteKeyName()
+    public function getRouteKeyName() : string
     {
         return 'slug';
     }
 
-    public function getFrontendUrlAttribute()
+    public function getFrontendUrlAttribute() : string
     {
         return url('/') . "/" . $this->slug;
     }

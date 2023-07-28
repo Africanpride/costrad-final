@@ -143,7 +143,7 @@ Route::get('institutes', function () {
     return view('institutes.index', compact('institutes', 'nextInstitute'));
 })->name('institutes');
 
-Route::get('/news/{slug}', [NewsroomController::class, 'show'])->name('news.show');
+Route::get('/news/{newsroom:slug}', [NewsroomController::class, 'show'])->name('news.show');
 Route::post('contact', ContactController::class)->name('contact-form');
 
 Route::group(['prefix' => 'laravel-filemanager', 'middleware' => ['web', 'auth']], function () {

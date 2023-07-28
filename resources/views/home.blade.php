@@ -1,6 +1,6 @@
 <x-front-layout>
 
-    <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto  ">
+    <section class="max-w-8xl p-4 md:px-8   mx-auto h-auto  ">
         <div class="{{ $isMobile ? '' : 'kenburns' }} min-h-[55vh] bg-center bg-cover bg-no-repeat relative rounded-3xl md:min-h-[85vh]"
             style="background-image: url('{{ asset('images/main/un2.jpg') }}');">
 
@@ -59,7 +59,7 @@
         </span>
     </section>
     <!-- component -->
-    <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
+    <section class="max-w-8xl p-4 md:px-8   mx-auto h-auto">
 
         <div
             class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5
@@ -126,7 +126,7 @@
 
     </section>
 
-    <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
+    <section class="max-w-8xl p-4 md:px-8   mx-auto h-auto">
 
         <div
             class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5
@@ -138,7 +138,7 @@
         </div>
     </section>
 
-    <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
+    <section class="max-w-8xl p-4 md:px-8   mx-auto h-auto">
 
         <div
             class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5
@@ -150,7 +150,7 @@
 
     </section>
 
-    <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
+    <section class="max-w-8xl p-4 md:px-8   mx-auto h-auto">
         <div
             class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5 p-4
          bg-firefly-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
@@ -198,7 +198,7 @@
         </div>
     </section>
 
-    <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto  ">
+    <section class="max-w-8xl p-4 md:px-8   mx-auto h-auto  ">
         <div class="{{ $isMobile ? '' : 'kenburns' }} min-h-[55vh] bg-center bg-cover bg-no-repeat relative rounded-3xl md:min-h-[85vh]"
             style="background-image: url('{{ asset('images/main/quarterglobe.jpg') }}');">
 

@@ -175,7 +175,7 @@
         <!-- End Card Section -->
     </section>
 
-    <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
+    <section class="max-w-8xl p-4 md:px-8   mx-auto h-auto">
 
 
         <div class="p-5 bg-gray-200/50 dark:bg-black  md:py-8 rounded-3xl">

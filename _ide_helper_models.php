@@ -278,7 +278,7 @@ namespace App\Models{
  * @property-read int|null $approvals_count
  * @property-read \App\Models\User $author
  * @property-read \App\Models\Category|null $category
- * @property-read mixed $frontend_url
+ * @property-read string $frontend_url
  * @property-read string $newsroom_image
  * @property-read \Spatie\MediaLibrary\MediaCollections\Models\Collections\MediaCollection<int, \Spatie\MediaLibrary\MediaCollections\Models\Media> $media
  * @property-read int|null $media_count

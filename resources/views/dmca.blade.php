@@ -1,5 +1,5 @@
 <x-front-layout>
-    <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
+    <section class="max-w-8xl p-4 md:px-8   mx-auto h-auto">
 
         <div
             class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5

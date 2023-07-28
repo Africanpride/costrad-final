@@ -2,7 +2,7 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
 
 
-    <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
+    <section class="max-w-8xl p-4 md:px-8   mx-auto h-auto">
         <form class="w-px-500 p-3 p-md-3" action="{{ route('test5') }}" method="post">
             @csrf
             <div>
@@ -69,7 +69,7 @@
 
     </section>
 
-    <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
+    <section class="max-w-8xl p-4 md:px-8   mx-auto h-auto">
 
 
         <div class="p-5 bg-gray-200/50 dark:bg-black  md:py-8 rounded-3xl">

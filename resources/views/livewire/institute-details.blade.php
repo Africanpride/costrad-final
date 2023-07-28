@@ -46,7 +46,7 @@
     <div class="space-y-4 pt-4">
 
 
-        <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto relative">
+        <section class="max-w-8xl p-4 md:px-8   mx-auto h-auto relative">
 
             <div class="{{ $isMobile ? '' : 'kenburns' }} min-h-[55vh] bg-center bg-cover bg-no-repeat rounded-3xl md:min-h-[85vh] relative"
                 style="background-image: url('{{ $institute->featured_image }}');">
@@ -116,7 +116,7 @@
                 </div>
         </section>
 
-        <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
+        <section class="max-w-8xl p-4 md:px-8   mx-auto h-auto">
             <div
                 class="min-h-[600px] md:min-h-max bg-firefly-500/10 border border-gray-300/10 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] dark:bg-black from-firefly-900 mx-auto p-8 rounded-3xl space-y-5 text-left to-firefly-900 py-16">
 
@@ -214,7 +214,7 @@
         </section>
 
 
-        <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto">
+        <section class="max-w-8xl p-4 md:px-8   mx-auto h-auto">
             <div class="gap-4 grid grid-cols-1 md:gap-3 md:grid-cols-5 pb-4">
 
                 @foreach ($images as $image)
@@ -231,7 +231,7 @@
             </div>
         </section>
 
-        <section class="max-w-8xl md:px-8 md:pr-10 mx-auto h-auto">
+        <section class="max-w-8xl md:px-8   mx-auto h-auto">
 
             <div
                 class="dark:ring-gray-700 lg:flex lg:max-w-none lg:mx-0 max-w-2xl mx-auto ring-1 ring-gray-200 rounded-3xl">
@@ -302,7 +302,7 @@
         </section>
 
 
-        <section class="h-auto max-w-8xl md:pr-10 md:px-8 mx-auto pt-8">
+        <section class="h-auto max-w-8xl   md:px-8 mx-auto pt-8">
             <figure>
                 <img class=" rounded-3xl" src="{{ asset('images/main/world-map.svg') }}" alt="Image Description">
             </figure>

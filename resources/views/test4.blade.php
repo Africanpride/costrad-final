@@ -50,7 +50,7 @@
   }
 
   .js {
-    background: radial-gradient(closest-side, white 79%, transparent 80% 100%, white 0), conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
+    background: radial-gradient(closest-side, #cc0099  79%, transparent 80% 100%, blue 0), conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
     -webkit-animation: js-progress 2s 1 forwards;
             animation: js-progress 2s 1 forwards;
   }

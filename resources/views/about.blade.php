@@ -337,14 +337,14 @@
         </section>
 
 
-        <section class="max-w-8xl p-4 md:px-8 md:pr-10 mx-auto h-auto ">
+        <section class="max-w-8xl p-4 md:px-8   mx-auto h-auto ">
 
             <div class="relative overflow-hidden rounded-2xl bg-cover z-10"
                 style="background-image: url('http://localhost:8000/images/main/lecture_in_progress2.jpg'); ">
 
                 <div class="absolute inset-0 w-full h-full bg-gray-950 opacity-25 dark:opacity-40 z-20"></div>
 
-                <div class="h-auto md:p-8 md:pr-10 mx-auto p-4 relative shadow-2xl z-30">
+                <div class="h-auto md:p-8   mx-auto p-4 relative shadow-2xl z-30">
                     <div class=" py-32 space-y-6">
                         <div class="text-center mx-auto">
                             {{-- <span
@@ -434,7 +434,7 @@
             <!-- End Grid -->
         </section>
         <!-- End agenda -->
-        <section class="max-w-8xl p-4 md:p-8 md:pr-10 mx-auto">
+        <section class="max-w-8xl p-4 md:p-8   mx-auto">
 
             <div
                 class=" min-h-[500px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5

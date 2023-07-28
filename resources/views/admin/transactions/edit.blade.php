@@ -5,7 +5,7 @@
         <x-heroicon-o-user-group class="w-5 h-5 text-current" />
     </x-admin-pageheader>
 
-        <section class="max-w-8xl p-4 md:p-8 md:pr-10 mx-auto">
+        <section class="max-w-8xl p-4 md:p-8   mx-auto">
 
             <div class=" space-y-4 pb-12 m-8 p-5 border border-gray-300/80 dark:border-gray-800/80 rounded-xl ">
 
