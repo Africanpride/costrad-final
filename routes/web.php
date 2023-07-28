@@ -115,8 +115,10 @@ Route::get('our-process', [ViewController::class, 'ourProcess']);
 Route::get('institutes', [ViewController::class, 'institutes']);
 Route::get('/', [ViewController::class, 'home'])->name('home');
 Route::get('news', [ViewController::class, 'news'])->name('news');
+
 Route::get('test4', function () {
-    return view('test4');
+    // return view('test4');
+    return __FILE__;
 })->name('test4')->middleware('auth');
 
 
