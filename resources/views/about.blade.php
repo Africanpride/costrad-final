@@ -36,7 +36,7 @@
         <section class="max-w-8xl p-4 md:px-6 mx-auto h-auto">
 
             <div class="relative overflow-hidden rounded-2xl bg-cover "
-                style="background-image: url('http://localhost:8000/images/main/lecture_in_progress.jpg');">
+                style="background-image: url('{{ asset('images/main/lecture_in_progress.jpg') }}');">
 
 
                 <div class="relative z-10 py-8 shadow-2xl  p-4 md:p-8 mx-auto ">
