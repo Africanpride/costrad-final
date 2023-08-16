@@ -51,7 +51,7 @@
             ... doing the seemingly impossible
         </h2>
         {{-- <h2
-            class=" text-firefly-800 px-5 text-gradient1 inline-block mt-5 text-3xl md:text-4xl font-extrabold  bg-clip-text bg-gradient-to-l from-firefly-600 to-violet-500 text-transparent dark:from-firefly-400 dark:to-violet-400 uppercase">
+            class="  px-5 text-gradient1 inline-block mt-5 text-3xl md:text-4xl font-extrabold  bg-clip-text bg-gradient-to-l from-firefly-600 to-violet-500 text-transparent dark:from-firefly-400 dark:to-violet-400 uppercase">
             ...doing the seemingly impossible.
         </h2> --}}
         <span class="md:text-lg font-extrabold text-gray-400 dark:text-white text-center mt-2 px-6 sm:px-0">
@@ -63,7 +63,7 @@
 
         <div
             class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5
-            bg-firefly-500/10 dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
+             dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
              from-firefly-900 to-firefly-900/80">
 
             <div class="px-4 mx-auto max-w-8xl sm:px-6 lg:px-8">
@@ -91,18 +91,18 @@
                     <div class="flex flex-col items-start justify-center md:px-8 space-y-6 text-left ">
 
                         <h2
-                            class="uppercase font-['anton'] text-2xl md:text-5xl leading-tight tracking-tight text-gray-900  bg-clip-text bg-gradient-to-l from-firefly-700 to-firefly-900 text-transparent dark:from-yellow-500 dark:to-firefly-700 ">
+                            class="uppercase font-['anton'] text-2xl md:text-5xl leading-tight tracking-tight   bg-clip-text bg-gradient-to-l from-firefly-700 to-firefly-900 text-transparent dark:from-yellow-500 dark:to-firefly-700 ">
                             The Vital Role of Leadership Training Today
                         </h2>
                         <p>
-                            At the <span >College of Systainable Transformation and Development COSTrAD</span>, You would find out more reasons why leadership training is essential and how
+                            At the <span >College of Systainable Transformation and Development COSTrAD</span>, You would find more reasons why leadership training is essential and how
                             leadership impacts family, governance, economy and every aspect of society. We teach you
                             the necessary skills and qualities to effectively lead and manage people, organizations,
                             and systems. Leaders must possess strong communication, decision-making, and
                             problem-solving skills, as well as the ability to inspire and motivate others.
 
                         </p>
-                        <p>
+                        {{-- <p>
                             Effective leadership involves being able to adapt to changing circumstances and make
                             difficult decisions when necessary. Through COSTrAD and it's various Institutes,
                             individuals, business leader and political leaders can gain the knowledge and skills
@@ -110,7 +110,7 @@
                             create positive change within their
                             communities. Do you want to acquire what it takes to make a mark in your area of
                             operation? Book your seat early as space could fill up quickly.
-                        </p>
+                        </p> --}}
 
 
                         <div class=" w-full mx-auto pt-3">
