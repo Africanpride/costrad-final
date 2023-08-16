@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Http;
+use Response;
 
 class ExchangeRate extends Model
 {
@@ -31,19 +32,17 @@ class ExchangeRate extends Model
             $responseData = $response->json();
             $exchange_rate_value = $responseData['rates']['GHS'];
 
-            if ($responseData) {
-                // update existing exchange rate in the database
-                $exchange_rate->update(['rate' => $exchange_rate_value]);
-            } else {
-                // create new exchange rate in the database
-                ExchangeRate::create(['rate' => $exchange_rate_value]);
+
+            if (!empty($responseData)) {
+
+                $newRate = ExchangeRate::firstOrCreate(['rate' => $exchange_rate_value]);
+
+                // update $exchange_rate variable with the latest value
+                return $newRate->rate;
             }
 
-            $exchange_rate = $exchange_rate_value; // update $exchange_rate variable with the latest value
-        } else {
-            $exchange_rate = $exchange_rate->rate;
         }
 
-        return $exchange_rate;
+        return $exchange_rate->rate;
     }
 }
