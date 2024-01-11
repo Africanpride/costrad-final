@@ -67,8 +67,8 @@ class AdminDashboard extends Component
     {
         $nextInstitute = $this->nextInstitute();
         $upcomingInstitute = Institute::where('startDate', '>', now())
-        ->orderBy('startDate', 'asc')
-        ->first();
+        ->orWhere('acronym','fdi')
+            ->first();
 
         $instituteParticipants = $upcomingInstitute->participants()->take(4)->get();
             //    dd($instituteParticipants);

@@ -448,7 +448,8 @@
     </section>
 
     @push('scripts')
-        <script>
+    <script type="text/javascript">
+// 123456789
             function callbackThen(response) {
                 response.json().then(function(data) {
                     if (data.success && data.score > 0.5) {

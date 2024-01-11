@@ -223,8 +223,9 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
+        // 'PDF' => Barryvdh\DomPDF\Facade::class,
+        'ReCaptcha' => Biscolab\ReCaptcha\Facades\ReCaptcha::class,
         'GeoIP' => \Torann\GeoIP\Facades\GeoIP::class,
-        'PDF' => Barryvdh\DomPDF\Facade::class,
         'SEOMeta'       => Artesaos\SEOTools\Facades\SEOMeta::class,
         'OpenGraph'     => Artesaos\SEOTools\Facades\OpenGraph::class,
         'Twitter'       => Artesaos\SEOTools\Facades\TwitterCard::class,

@@ -18617,7 +18617,236 @@
      
 }
 
-        namespace Torann\GeoIP\Facades { 
+        namespace Biscolab\ReCaptcha\Facades { 
+            /**
+     * Class ReCaptcha
+     *
+     * @package Biscolab\ReCaptcha\Facades
+     * @method static string htmlFormButton(?string $button_label = '', ?array $properties = [])
+     * @method static string htmlFormSnippet()
+     * @method static string getFormId()
+     */ 
+        class ReCaptcha {
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getTokenParameterName()
+        {
+                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
+                        return $instance->getTokenParameterName();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getValidationUrl()
+        {
+                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
+                        return $instance->getValidationUrl();
+        }
+                    /**
+         * 
+         *
+         * @static 
+         */ 
+        public static function getValidationUrlWithToken()
+        {
+                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
+                        return $instance->getValidationUrlWithToken();
+        }
+                    /**
+         * Write script HTML tag in you HTML code
+         * Insert before </head> tag
+         *
+         * @param array|null $configuration
+         * @return string 
+         * @static 
+         */ 
+        public static function htmlScriptTagJsApi($configuration = [])
+        {
+                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
+                        return $instance->htmlScriptTagJsApi($configuration);
+        }
+                    /**
+         * 
+         *
+         * @param string $api_site_key
+         * @return \Biscolab\ReCaptcha\ReCaptchaBuilder 
+         * @static 
+         */ 
+        public static function setApiSiteKey($api_site_key)
+        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
+                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
+                        return $instance->setApiSiteKey($api_site_key);
+        }
+                    /**
+         * 
+         *
+         * @param string $api_secret_key
+         * @return \Biscolab\ReCaptcha\ReCaptchaBuilder 
+         * @static 
+         */ 
+        public static function setApiSecretKey($api_secret_key)
+        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
+                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
+                        return $instance->setApiSecretKey($api_secret_key);
+        }
+                    /**
+         * 
+         *
+         * @return int 
+         * @static 
+         */ 
+        public static function getCurlTimeout()
+        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
+                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
+                        return $instance->getCurlTimeout();
+        }
+                    /**
+         * 
+         *
+         * @param string $version
+         * @return \Biscolab\ReCaptcha\ReCaptchaBuilder 
+         * @static 
+         */ 
+        public static function setVersion($version)
+        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
+                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
+                        return $instance->setVersion($version);
+        }
+                    /**
+         * 
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function getVersion()
+        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
+                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
+                        return $instance->getVersion();
+        }
+                    /**
+         * 
+         *
+         * @param bool $skip_by_ip
+         * @return \Biscolab\ReCaptcha\ReCaptchaBuilder 
+         * @static 
+         */ 
+        public static function setSkipByIp($skip_by_ip)
+        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
+                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
+                        return $instance->setSkipByIp($skip_by_ip);
+        }
+                    /**
+         * 
+         *
+         * @param null|string $api_domain
+         * @return \Biscolab\ReCaptcha\ReCaptchaBuilder 
+         * @static 
+         */ 
+        public static function setApiDomain($api_domain = null)
+        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
+                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
+                        return $instance->setApiDomain($api_domain);
+        }
+                    /**
+         * 
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function getApiDomain()
+        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
+                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
+                        return $instance->getApiDomain();
+        }
+                    /**
+         * 
+         *
+         * @return \Biscolab\ReCaptcha\ReCaptchaBuilder 
+         * @static 
+         */ 
+        public static function setApiUrls()
+        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
+                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
+                        return $instance->setApiUrls();
+        }
+                    /**
+         * 
+         *
+         * @return array|mixed 
+         * @static 
+         */ 
+        public static function getIpWhitelist()
+        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
+                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
+                        return $instance->getIpWhitelist();
+        }
+                    /**
+         * Checks whether the user IP address is among IPs "to be skipped"
+         *
+         * @return boolean 
+         * @static 
+         */ 
+        public static function skipByIp()
+        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
+                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
+                        return $instance->skipByIp();
+        }
+                    /**
+         * Call out to reCAPTCHA and process the response
+         *
+         * @param string $response
+         * @return boolean|array 
+         * @static 
+         */ 
+        public static function validate($response)
+        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
+                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
+                        return $instance->validate($response);
+        }
+                    /**
+         * 
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function getApiSiteKey()
+        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
+                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
+                        return $instance->getApiSiteKey();
+        }
+                    /**
+         * 
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function getApiSecretKey()
+        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
+                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
+                        return $instance->getApiSecretKey();
+        }
+                    /**
+         * 
+         *
+         * @return string 
+         * @static 
+         */ 
+        public static function getOnLoadCallback()
+        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
+                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
+                        return $instance->getOnLoadCallback();
+        }
+         
+    }
+     
+}
+
+    namespace Torann\GeoIP\Facades { 
             /**
      * 
      *
@@ -18694,354 +18923,6 @@
         {
                         /** @var \Torann\GeoIP\GeoIP $instance */
                         return $instance->config($key, $default);
-        }
-         
-    }
-     
-}
-
-    namespace Barryvdh\DomPDF\Facade { 
-            /**
-     * 
-     *
-     * @method static \Barryvdh\DomPDF\PDF setPaper($paper, $orientation = 'portrait')
-     * @method static \Barryvdh\DomPDF\PDF setBaseHost(string $baseHost)
-     * @method static \Barryvdh\DomPDF\PDF setProtocol(string $protocol)
-     * @method static \Barryvdh\DomPDF\PDF setHttpContext($httpContext)
-     * @method static \Barryvdh\DomPDF\PDF setCallbacks(array $callbacks)
-     */ 
-        class Pdf {
-                    /**
-         * Get the DomPDF instance
-         *
-         * @return \Dompdf\Dompdf 
-         * @static 
-         */ 
-        public static function getDomPDF()
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->getDomPDF();
-        }
-                    /**
-         * Show or hide warnings
-         *
-         * @static 
-         */ 
-        public static function setWarnings($warnings)
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->setWarnings($warnings);
-        }
-                    /**
-         * Load a HTML string
-         *
-         * @param string|null $encoding Not used yet
-         * @static 
-         */ 
-        public static function loadHTML($string, $encoding = null)
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->loadHTML($string, $encoding);
-        }
-                    /**
-         * Load a HTML file
-         *
-         * @static 
-         */ 
-        public static function loadFile($file)
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->loadFile($file);
-        }
-                    /**
-         * Add metadata info
-         *
-         * @param array<string, string> $info
-         * @return static 
-         * @static 
-         */ 
-        public static function addInfo($info)
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->addInfo($info);
-        }
-                    /**
-         * Load a View and convert to HTML
-         *
-         * @param array<string, mixed> $data
-         * @param array<string, mixed> $mergeData
-         * @param string|null $encoding Not used yet
-         * @static 
-         */ 
-        public static function loadView($view, $data = [], $mergeData = [], $encoding = null)
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->loadView($view, $data, $mergeData, $encoding);
-        }
-                    /**
-         * Set/Change an option (or array of options) in Dompdf
-         *
-         * @param array<string, mixed>|string $attribute
-         * @param null|mixed $value
-         * @return \Barryvdh\DomPDF\PDF 
-         * @static 
-         */ 
-        public static function setOption($attribute, $value = null)
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->setOption($attribute, $value);
-        }
-                    /**
-         * Replace all the Options from DomPDF
-         *
-         * @deprecated Use setOption to override individual options.
-         * @param array<string, mixed> $options
-         * @static 
-         */ 
-        public static function setOptions($options)
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->setOptions($options);
-        }
-                    /**
-         * Output the PDF as a string.
-         * 
-         * The options parameter controls the output. Accepted options are:
-         * 
-         * 'compress' = > 1 or 0 - apply content stream compression, this is
-         *    on (1) by default
-         *
-         * @param array<string, int> $options
-         * @return string The rendered PDF as string
-         * @static 
-         */ 
-        public static function output($options = [])
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->output($options);
-        }
-                    /**
-         * Save the PDF to a file
-         *
-         * @static 
-         */ 
-        public static function save($filename, $disk = null)
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->save($filename, $disk);
-        }
-                    /**
-         * Make the PDF downloadable by the user
-         *
-         * @static 
-         */ 
-        public static function download($filename = 'document.pdf')
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->download($filename);
-        }
-                    /**
-         * Return a response with the PDF to show in the browser
-         *
-         * @static 
-         */ 
-        public static function stream($filename = 'document.pdf')
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->stream($filename);
-        }
-                    /**
-         * Render the PDF
-         *
-         * @static 
-         */ 
-        public static function render()
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->render();
-        }
-                    /**
-         * 
-         *
-         * @param array<string> $pc
-         * @static 
-         */ 
-        public static function setEncryption($password, $ownerpassword = '', $pc = [])
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->setEncryption($password, $ownerpassword, $pc);
-        }
-         
-    }
-            /**
-     * 
-     *
-     * @method static \Barryvdh\DomPDF\PDF setPaper($paper, $orientation = 'portrait')
-     * @method static \Barryvdh\DomPDF\PDF setBaseHost(string $baseHost)
-     * @method static \Barryvdh\DomPDF\PDF setProtocol(string $protocol)
-     * @method static \Barryvdh\DomPDF\PDF setHttpContext($httpContext)
-     * @method static \Barryvdh\DomPDF\PDF setCallbacks(array $callbacks)
-     */ 
-        class Pdf {
-                    /**
-         * Get the DomPDF instance
-         *
-         * @return \Dompdf\Dompdf 
-         * @static 
-         */ 
-        public static function getDomPDF()
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->getDomPDF();
-        }
-                    /**
-         * Show or hide warnings
-         *
-         * @static 
-         */ 
-        public static function setWarnings($warnings)
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->setWarnings($warnings);
-        }
-                    /**
-         * Load a HTML string
-         *
-         * @param string|null $encoding Not used yet
-         * @static 
-         */ 
-        public static function loadHTML($string, $encoding = null)
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->loadHTML($string, $encoding);
-        }
-                    /**
-         * Load a HTML file
-         *
-         * @static 
-         */ 
-        public static function loadFile($file)
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->loadFile($file);
-        }
-                    /**
-         * Add metadata info
-         *
-         * @param array<string, string> $info
-         * @return static 
-         * @static 
-         */ 
-        public static function addInfo($info)
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->addInfo($info);
-        }
-                    /**
-         * Load a View and convert to HTML
-         *
-         * @param array<string, mixed> $data
-         * @param array<string, mixed> $mergeData
-         * @param string|null $encoding Not used yet
-         * @static 
-         */ 
-        public static function loadView($view, $data = [], $mergeData = [], $encoding = null)
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->loadView($view, $data, $mergeData, $encoding);
-        }
-                    /**
-         * Set/Change an option (or array of options) in Dompdf
-         *
-         * @param array<string, mixed>|string $attribute
-         * @param null|mixed $value
-         * @return \Barryvdh\DomPDF\PDF 
-         * @static 
-         */ 
-        public static function setOption($attribute, $value = null)
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->setOption($attribute, $value);
-        }
-                    /**
-         * Replace all the Options from DomPDF
-         *
-         * @deprecated Use setOption to override individual options.
-         * @param array<string, mixed> $options
-         * @static 
-         */ 
-        public static function setOptions($options)
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->setOptions($options);
-        }
-                    /**
-         * Output the PDF as a string.
-         * 
-         * The options parameter controls the output. Accepted options are:
-         * 
-         * 'compress' = > 1 or 0 - apply content stream compression, this is
-         *    on (1) by default
-         *
-         * @param array<string, int> $options
-         * @return string The rendered PDF as string
-         * @static 
-         */ 
-        public static function output($options = [])
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->output($options);
-        }
-                    /**
-         * Save the PDF to a file
-         *
-         * @static 
-         */ 
-        public static function save($filename, $disk = null)
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->save($filename, $disk);
-        }
-                    /**
-         * Make the PDF downloadable by the user
-         *
-         * @static 
-         */ 
-        public static function download($filename = 'document.pdf')
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->download($filename);
-        }
-                    /**
-         * Return a response with the PDF to show in the browser
-         *
-         * @static 
-         */ 
-        public static function stream($filename = 'document.pdf')
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->stream($filename);
-        }
-                    /**
-         * Render the PDF
-         *
-         * @static 
-         */ 
-        public static function render()
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->render();
-        }
-                    /**
-         * 
-         *
-         * @param array<string> $pc
-         * @static 
-         */ 
-        public static function setEncryption($password, $ownerpassword = '', $pc = [])
-        {
-                        /** @var \Barryvdh\DomPDF\PDF $instance */
-                        return $instance->setEncryption($password, $ownerpassword, $pc);
         }
          
     }
@@ -20917,229 +20798,348 @@
      
 }
 
-    namespace Biscolab\ReCaptcha\Facades { 
+    namespace Barryvdh\DomPDF\Facade { 
             /**
-     * Class ReCaptcha
+     * 
      *
-     * @package Biscolab\ReCaptcha\Facades
-     * @method static string htmlFormButton(?string $button_label = '', ?array $properties = [])
-     * @method static string htmlFormSnippet()
-     * @method static string getFormId()
+     * @method static \Barryvdh\DomPDF\PDF setPaper($paper, $orientation = 'portrait')
+     * @method static \Barryvdh\DomPDF\PDF setBaseHost(string $baseHost)
+     * @method static \Barryvdh\DomPDF\PDF setProtocol(string $protocol)
+     * @method static \Barryvdh\DomPDF\PDF setHttpContext($httpContext)
+     * @method static \Barryvdh\DomPDF\PDF setCallbacks(array $callbacks)
      */ 
-        class ReCaptcha {
+        class Pdf {
                     /**
-         * 
+         * Get the DomPDF instance
          *
+         * @return \Dompdf\Dompdf 
          * @static 
          */ 
-        public static function getTokenParameterName()
+        public static function getDomPDF()
         {
-                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
-                        return $instance->getTokenParameterName();
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->getDomPDF();
         }
                     /**
-         * 
+         * Show or hide warnings
          *
          * @static 
          */ 
-        public static function getValidationUrl()
+        public static function setWarnings($warnings)
         {
-                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
-                        return $instance->getValidationUrl();
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->setWarnings($warnings);
         }
                     /**
-         * 
+         * Load a HTML string
          *
+         * @param string|null $encoding Not used yet
          * @static 
          */ 
-        public static function getValidationUrlWithToken()
+        public static function loadHTML($string, $encoding = null)
         {
-                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
-                        return $instance->getValidationUrlWithToken();
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->loadHTML($string, $encoding);
         }
                     /**
-         * Write script HTML tag in you HTML code
-         * Insert before </head> tag
+         * Load a HTML file
          *
-         * @param array|null $configuration
-         * @return string 
          * @static 
          */ 
-        public static function htmlScriptTagJsApi($configuration = [])
+        public static function loadFile($file)
         {
-                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
-                        return $instance->htmlScriptTagJsApi($configuration);
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->loadFile($file);
+        }
+                    /**
+         * Add metadata info
+         *
+         * @param array<string, string> $info
+         * @return static 
+         * @static 
+         */ 
+        public static function addInfo($info)
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->addInfo($info);
+        }
+                    /**
+         * Load a View and convert to HTML
+         *
+         * @param array<string, mixed> $data
+         * @param array<string, mixed> $mergeData
+         * @param string|null $encoding Not used yet
+         * @static 
+         */ 
+        public static function loadView($view, $data = [], $mergeData = [], $encoding = null)
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->loadView($view, $data, $mergeData, $encoding);
+        }
+                    /**
+         * Set/Change an option (or array of options) in Dompdf
+         *
+         * @param array<string, mixed>|string $attribute
+         * @param null|mixed $value
+         * @return \Barryvdh\DomPDF\PDF 
+         * @static 
+         */ 
+        public static function setOption($attribute, $value = null)
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->setOption($attribute, $value);
+        }
+                    /**
+         * Replace all the Options from DomPDF
+         *
+         * @deprecated Use setOption to override individual options.
+         * @param array<string, mixed> $options
+         * @static 
+         */ 
+        public static function setOptions($options)
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->setOptions($options);
+        }
+                    /**
+         * Output the PDF as a string.
+         * 
+         * The options parameter controls the output. Accepted options are:
+         * 
+         * 'compress' = > 1 or 0 - apply content stream compression, this is
+         *    on (1) by default
+         *
+         * @param array<string, int> $options
+         * @return string The rendered PDF as string
+         * @static 
+         */ 
+        public static function output($options = [])
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->output($options);
+        }
+                    /**
+         * Save the PDF to a file
+         *
+         * @static 
+         */ 
+        public static function save($filename, $disk = null)
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->save($filename, $disk);
+        }
+                    /**
+         * Make the PDF downloadable by the user
+         *
+         * @static 
+         */ 
+        public static function download($filename = 'document.pdf')
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->download($filename);
+        }
+                    /**
+         * Return a response with the PDF to show in the browser
+         *
+         * @static 
+         */ 
+        public static function stream($filename = 'document.pdf')
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->stream($filename);
+        }
+                    /**
+         * Render the PDF
+         *
+         * @static 
+         */ 
+        public static function render()
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->render();
         }
                     /**
          * 
          *
-         * @param string $api_site_key
-         * @return \Biscolab\ReCaptcha\ReCaptchaBuilder 
+         * @param array<string> $pc
          * @static 
          */ 
-        public static function setApiSiteKey($api_site_key)
-        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
-                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
-                        return $instance->setApiSiteKey($api_site_key);
+        public static function setEncryption($password, $ownerpassword = '', $pc = [])
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->setEncryption($password, $ownerpassword, $pc);
+        }
+         
+    }
+            /**
+     * 
+     *
+     * @method static \Barryvdh\DomPDF\PDF setPaper($paper, $orientation = 'portrait')
+     * @method static \Barryvdh\DomPDF\PDF setBaseHost(string $baseHost)
+     * @method static \Barryvdh\DomPDF\PDF setProtocol(string $protocol)
+     * @method static \Barryvdh\DomPDF\PDF setHttpContext($httpContext)
+     * @method static \Barryvdh\DomPDF\PDF setCallbacks(array $callbacks)
+     */ 
+        class Pdf {
+                    /**
+         * Get the DomPDF instance
+         *
+         * @return \Dompdf\Dompdf 
+         * @static 
+         */ 
+        public static function getDomPDF()
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->getDomPDF();
+        }
+                    /**
+         * Show or hide warnings
+         *
+         * @static 
+         */ 
+        public static function setWarnings($warnings)
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->setWarnings($warnings);
+        }
+                    /**
+         * Load a HTML string
+         *
+         * @param string|null $encoding Not used yet
+         * @static 
+         */ 
+        public static function loadHTML($string, $encoding = null)
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->loadHTML($string, $encoding);
+        }
+                    /**
+         * Load a HTML file
+         *
+         * @static 
+         */ 
+        public static function loadFile($file)
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->loadFile($file);
+        }
+                    /**
+         * Add metadata info
+         *
+         * @param array<string, string> $info
+         * @return static 
+         * @static 
+         */ 
+        public static function addInfo($info)
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->addInfo($info);
+        }
+                    /**
+         * Load a View and convert to HTML
+         *
+         * @param array<string, mixed> $data
+         * @param array<string, mixed> $mergeData
+         * @param string|null $encoding Not used yet
+         * @static 
+         */ 
+        public static function loadView($view, $data = [], $mergeData = [], $encoding = null)
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->loadView($view, $data, $mergeData, $encoding);
+        }
+                    /**
+         * Set/Change an option (or array of options) in Dompdf
+         *
+         * @param array<string, mixed>|string $attribute
+         * @param null|mixed $value
+         * @return \Barryvdh\DomPDF\PDF 
+         * @static 
+         */ 
+        public static function setOption($attribute, $value = null)
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->setOption($attribute, $value);
+        }
+                    /**
+         * Replace all the Options from DomPDF
+         *
+         * @deprecated Use setOption to override individual options.
+         * @param array<string, mixed> $options
+         * @static 
+         */ 
+        public static function setOptions($options)
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->setOptions($options);
+        }
+                    /**
+         * Output the PDF as a string.
+         * 
+         * The options parameter controls the output. Accepted options are:
+         * 
+         * 'compress' = > 1 or 0 - apply content stream compression, this is
+         *    on (1) by default
+         *
+         * @param array<string, int> $options
+         * @return string The rendered PDF as string
+         * @static 
+         */ 
+        public static function output($options = [])
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->output($options);
+        }
+                    /**
+         * Save the PDF to a file
+         *
+         * @static 
+         */ 
+        public static function save($filename, $disk = null)
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->save($filename, $disk);
+        }
+                    /**
+         * Make the PDF downloadable by the user
+         *
+         * @static 
+         */ 
+        public static function download($filename = 'document.pdf')
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->download($filename);
+        }
+                    /**
+         * Return a response with the PDF to show in the browser
+         *
+         * @static 
+         */ 
+        public static function stream($filename = 'document.pdf')
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->stream($filename);
+        }
+                    /**
+         * Render the PDF
+         *
+         * @static 
+         */ 
+        public static function render()
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->render();
         }
                     /**
          * 
          *
-         * @param string $api_secret_key
-         * @return \Biscolab\ReCaptcha\ReCaptchaBuilder 
+         * @param array<string> $pc
          * @static 
          */ 
-        public static function setApiSecretKey($api_secret_key)
-        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
-                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
-                        return $instance->setApiSecretKey($api_secret_key);
-        }
-                    /**
-         * 
-         *
-         * @return int 
-         * @static 
-         */ 
-        public static function getCurlTimeout()
-        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
-                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
-                        return $instance->getCurlTimeout();
-        }
-                    /**
-         * 
-         *
-         * @param string $version
-         * @return \Biscolab\ReCaptcha\ReCaptchaBuilder 
-         * @static 
-         */ 
-        public static function setVersion($version)
-        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
-                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
-                        return $instance->setVersion($version);
-        }
-                    /**
-         * 
-         *
-         * @return string 
-         * @static 
-         */ 
-        public static function getVersion()
-        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
-                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
-                        return $instance->getVersion();
-        }
-                    /**
-         * 
-         *
-         * @param bool $skip_by_ip
-         * @return \Biscolab\ReCaptcha\ReCaptchaBuilder 
-         * @static 
-         */ 
-        public static function setSkipByIp($skip_by_ip)
-        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
-                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
-                        return $instance->setSkipByIp($skip_by_ip);
-        }
-                    /**
-         * 
-         *
-         * @param null|string $api_domain
-         * @return \Biscolab\ReCaptcha\ReCaptchaBuilder 
-         * @static 
-         */ 
-        public static function setApiDomain($api_domain = null)
-        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
-                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
-                        return $instance->setApiDomain($api_domain);
-        }
-                    /**
-         * 
-         *
-         * @return string 
-         * @static 
-         */ 
-        public static function getApiDomain()
-        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
-                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
-                        return $instance->getApiDomain();
-        }
-                    /**
-         * 
-         *
-         * @return \Biscolab\ReCaptcha\ReCaptchaBuilder 
-         * @static 
-         */ 
-        public static function setApiUrls()
-        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
-                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
-                        return $instance->setApiUrls();
-        }
-                    /**
-         * 
-         *
-         * @return array|mixed 
-         * @static 
-         */ 
-        public static function getIpWhitelist()
-        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
-                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
-                        return $instance->getIpWhitelist();
-        }
-                    /**
-         * Checks whether the user IP address is among IPs "to be skipped"
-         *
-         * @return boolean 
-         * @static 
-         */ 
-        public static function skipByIp()
-        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
-                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
-                        return $instance->skipByIp();
-        }
-                    /**
-         * Call out to reCAPTCHA and process the response
-         *
-         * @param string $response
-         * @return boolean|array 
-         * @static 
-         */ 
-        public static function validate($response)
-        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
-                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
-                        return $instance->validate($response);
-        }
-                    /**
-         * 
-         *
-         * @return string 
-         * @static 
-         */ 
-        public static function getApiSiteKey()
-        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
-                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
-                        return $instance->getApiSiteKey();
-        }
-                    /**
-         * 
-         *
-         * @return string 
-         * @static 
-         */ 
-        public static function getApiSecretKey()
-        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
-                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
-                        return $instance->getApiSecretKey();
-        }
-                    /**
-         * 
-         *
-         * @return string 
-         * @static 
-         */ 
-        public static function getOnLoadCallback()
-        {            //Method inherited from \Biscolab\ReCaptcha\ReCaptchaBuilder         
-                        /** @var \Biscolab\ReCaptcha\ReCaptchaBuilderV3 $instance */
-                        return $instance->getOnLoadCallback();
+        public static function setEncryption($password, $ownerpassword = '', $pc = [])
+        {
+                        /** @var \Barryvdh\DomPDF\PDF $instance */
+                        return $instance->setEncryption($password, $ownerpassword, $pc);
         }
          
     }
@@ -28351,8 +28351,8 @@ namespace  {
             class Validator extends \Illuminate\Support\Facades\Validator {}
             class View extends \Illuminate\Support\Facades\View {}
             class Vite extends \Illuminate\Support\Facades\Vite {}
+            class ReCaptcha extends \Biscolab\ReCaptcha\Facades\ReCaptcha {}
             class GeoIP extends \Torann\GeoIP\Facades\GeoIP {}
-            class PDF extends \Barryvdh\DomPDF\Facade\Pdf {}
             class SEOMeta extends \Artesaos\SEOTools\Facades\SEOMeta {}
             class OpenGraph extends \Artesaos\SEOTools\Facades\OpenGraph {}
             class Twitter extends \Artesaos\SEOTools\Facades\TwitterCard {}
@@ -28361,7 +28361,7 @@ namespace  {
             class SEO extends \Artesaos\SEOTools\Facades\SEOTools {}
             class LarapexChart extends \ArielMejiaDev\LarapexCharts\Facades\LarapexChart {}
             class Pdf extends \Barryvdh\DomPDF\Facade\Pdf {}
-            class ReCaptcha extends \Biscolab\ReCaptcha\Facades\ReCaptcha {}
+            class PDF extends \Barryvdh\DomPDF\Facade\Pdf {}
             class Select2 extends \Blockpc\Select2Wire\Facades\Select2 {}
             class Image extends \Intervention\Image\Facades\Image {}
             class Agent extends \Jenssegers\Agent\Facades\Agent {}
