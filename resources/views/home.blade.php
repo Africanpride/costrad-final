@@ -8,13 +8,17 @@
             <div
                 class="absolute bottom-0 left-0 right-0 max-w-md text-center mx-auto p-6 md:left-auto md:text-left md:mx-0">
                 <!-- Card -->
-                <div class="bg-white dark:bg-firefly-900 flex-col gap-4 inline-flex justify-between md:p-4 px-2 rounded-2xl shadow-2xl">
+                <div
+                    class="bg-white dark:bg-firefly-900 flex-col gap-4 inline-flex justify-between md:p-4 px-2 rounded-2xl shadow-2xl">
                     <div class="hidden md:block">
-                        <h3 class=" font-bold text-gray-800 text-sm dark:text-gray-200"> COSTrAD: A Critical Mandate.
+                        <h3 class=" font-bold text-gray-800 text-sm dark:text-gray-200">
+                            {{ __('COSTrAD: A Critical Mandate.') }}
                         </h3>
-                        <p class="mt-2 text-gray-800 dark:text-gray-200 text-xs text-left">The College of Sustainable
-                            Transformation and Development (COSTrAD) and the various institutes are committed to the
-                            restoration, transformation and development of all spheres of society.</p>
+                        <p class="mt-2 text-gray-800 dark:text-gray-200 text-xs text-left">
+                            {{ __("The College of Sustainable
+                                                        Transformation and Development (COSTrAD) and the various institutes are committed to the
+                                                        restoration, transformation and development of all spheres of society.") }}
+                        </p>
                     </div>
 
                     <div class="inline-flex">
@@ -27,7 +31,7 @@
                                     d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z">
                                 </path>
                             </svg>
-                            Watch our AudioVisual
+                            {{ __('Watch our AudioVisual') }}
                         </a>
                     </div>
                 </div>
@@ -36,16 +40,20 @@
         </div>
     </section>
 
+
     <section class="w-full items-center flex flex-col justify-center py-8">
-        <svg width="317" height="120" viewBox="0 0 317 120" fill="none">
-            <path transform="tranfirefly(-36,0)" d="m197.32283 25.03412l-0 100.48032" stroke="gray" stroke-opacity="0.2">
-            </path>
-            <path transform="tranfirefly(-36,0)" d="m197.32283 25.03412l-0 100.48032" stroke="url(#pulse-1)"
-                stroke-linecap="round" stroke-width="2"></path>
-            <path d="m197.32283 25.03412-0 20" stroke="gray"
-                style="transform: tranfireflyX(-36px) tranfireflyY(118.724px); transform-origin: 197.323px 35.0341px;"
-                transform-origin="197.3228302001953px 35.034119606018066px"></path>
-        </svg>
+        <div class="hidden md:block">
+            <svg width="317" height="120" viewBox="0 0 317 120" fill="none">
+                <path transform="tranfirefly(-36,0)" d="m197.32283 25.03412l-0 100.48032" stroke="gray"
+                    stroke-opacity="0.2">
+                </path>
+                <path transform="tranfirefly(-36,0)" d="m197.32283 25.03412l-0 100.48032" stroke="url(#pulse-1)"
+                    stroke-linecap="round" stroke-width="2"></path>
+                <path d="m197.32283 25.03412-0 20" stroke="gray"
+                    style="transform: tranfireflyX(-36px) tranfireflyY(118.724px); transform-origin: 197.323px 35.0341px;"
+                    transform-origin="197.3228302001953px 35.034119606018066px"></path>
+            </svg>
+        </div>
         <h2
             class="mt-4 max-w-6xl text-firefly-900 text-lg md:text-5xl tracking-tight  font-bold  font-['inter'] uppercase prominent-titles">
             ... doing the seemingly impossible
@@ -54,17 +62,14 @@
             class="  px-5 text-gradient1 inline-block mt-5 text-3xl md:text-4xl font-extrabold  bg-clip-text bg-gradient-to-l from-firefly-600 to-violet-500 text-transparent dark:from-firefly-400 dark:to-violet-400 uppercase">
             ...doing the seemingly impossible.
         </h2> --}}
-        <span class="md:text-lg font-extrabold text-gray-400 dark:text-white text-center mt-2 px-6 sm:px-0">
+        <span class="md:text-lg font-bold uppercase text-gray-400 dark:text-white text-center mt-2 px-6 sm:px-0">
             Explore what COSTrAD can help you achieve.
         </span>
     </section>
-    <!-- component -->
-    <section class="max-w-8xl p-4 md:px-8   mx-auto h-auto">
 
-        <div
-            class=" min-h-[600px] mx-auto rounded-2xl border  border-gray-300/10 text-center space-y-5
-             dark:bg-black py-16 dark:bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))]
-             from-firefly-900 to-firefly-900/80">
+    <section class="max-w-auto  mx-auto h-auto pt-16">
+
+        <div class="  md:py-24 ">
 
             <div class="px-4 mx-auto max-w-8xl sm:px-6 lg:px-8">
                 <div class="grid items-stretch gap-y-10 md:grid-cols-2 md:gap-x-6">
@@ -91,11 +96,12 @@
                     <div class="flex flex-col items-start justify-center md:px-8 space-y-6 text-left ">
 
                         <h2
-                            class="uppercase font-['anton'] text-2xl md:text-5xl leading-tight tracking-tight   bg-clip-text bg-gradient-to-l from-firefly-700 to-firefly-900 text-transparent dark:from-yellow-500 dark:to-firefly-700 ">
+                            class="uppercase font-['anton'] text-5xl md:text-5xl leading-tight tracking-tight   bg-clip-text bg-gradient-to-l from-firefly-700 to-firefly-900 text-transparent dark:from-yellow-500 dark:to-firefly-700 ">
                             The Vital Role of Leadership Training Today
                         </h2>
                         <p>
-                            At the <span >College of Systainable Transformation and Development COSTrAD</span>, You would find more reasons why leadership training is essential and how
+                            At the <span>College of Systainable Transformation and Development COSTrAD</span>, You would
+                            find more reasons why leadership training is essential and how
                             leadership impacts family, governance, economy and every aspect of society. We teach you
                             the necessary skills and qualities to effectively lead and manage people, organizations,
                             and systems. Leaders must possess strong communication, decision-making, and
@@ -113,7 +119,7 @@
                         </p> --}}
 
 
-                        <div class=" w-full mx-auto pt-3">
+                        <div class=" w-full mx-auto py-8 md:py-6 ">
                             <a href="{{ url('about') }}">
                                 <button class="cbutton !py-1 font-bold" style="width:50%;">Learn More About
                                     costrad</button>
@@ -137,6 +143,7 @@
 
         </div>
     </section>
+
 
     <section class="max-w-8xl p-4 md:px-8   mx-auto h-auto">
 

@@ -29,8 +29,13 @@ class UpNext extends Component
         //     ->orderBy('startDate', 'asc')
         //     ->first();
 
+        // Find the first instance of an institute where startDate is greater than today's date
+        // $this->upcomingInstitute = Institute::where('startDate', '>', $this->today)
+        //     ->orderBy('startDate', 'asc')
+        //     ->first();
+
         $this->upcomingInstitute = Institute::where('startDate', '>', now())
-            ->orWhere('acronym', 'fdi')
+        ->orWhere('acronym','fdi')
             ->first();
     }
 

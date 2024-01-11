@@ -140,8 +140,9 @@ Route::get('/institutes/{slug}', [DisplayInstituteController::class, 'show'])->n
 Route::get('institutes', function () {
     $institutes = Institute::get();
     $nextInstitute = Institute::where('startDate', '>', now())
-        ->orderBy('startDate', 'asc')
+    ->orWhere('acronym','fdi')
         ->first();
+
     return view('institutes.index', compact('institutes', 'nextInstitute'));
 })->name('institutes');
 
