@@ -23,7 +23,7 @@ class UpNext extends Component
     public function __construct()
     {
         // Get the current date
-        $this->today = date('Y-m-d');
+        // $this->today = date('Y-m-d');
         // Find the first instance of an institute where startDate is greater than today's date
         // $this->upcomingInstitute = Institute::where('startDate', '>', $this->today)
         //     ->orderBy('startDate', 'asc')

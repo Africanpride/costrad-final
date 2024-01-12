@@ -46,7 +46,7 @@ class CreateNewPassword extends Component
         Auth::login($this->user);
 
         // Redirect the user to the intended route or a default route if not available
-        return redirect()->intended(route('home', [], false));
+        return redirect()->intended();
     }
 
     public function render()

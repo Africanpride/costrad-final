@@ -20,4 +20,6 @@ yarn-error.log
 ./app/analytics/service-account-credentials.json
 /docker
 *.zip
+README2.md
+
 

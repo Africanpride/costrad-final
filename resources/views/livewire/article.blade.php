@@ -302,10 +302,10 @@
     </div>
     <!-- End Sticky Share Group -->
 
+    <style>
+        article img {
+            border-radius: 0.95rem;
+        }
+    </style>
 </div>
 
-<style>
-    article img {
-        border-radius: 0.95rem;
-    }
-</style>
