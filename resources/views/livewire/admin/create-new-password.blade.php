@@ -5,8 +5,10 @@
                 <img class=" h-16 w-16 rounded-full ring-2 ring-white dark:ring-gray-800"
                     src="{{ Auth::user()?->profile_photo_url }}" alt="Image Description">
 
-                <h1 class="block text-xl font-bold text-gray-800 dark:text-white">Set New password!
-                    {{ Auth::user()?->firstName }}.</h1>
+                <h1 class="block text-2xl font-bold text-gray-800 dark:text-white">Set New password</h1>
+                <h6 class="text-[14px] font-bold block text-gray-800 dark:text-white">
+                    {{ Auth::user()?->email }} <br />
+                    {{ Auth::user()?->firstName }} {{ Auth::user()?->lastName }}</h6>
             </div>
 
             <div class="mt-5">

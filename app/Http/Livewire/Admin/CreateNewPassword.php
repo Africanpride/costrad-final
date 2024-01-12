@@ -36,14 +36,17 @@ class CreateNewPassword extends Component
             'password' => 'required|min:8|confirmed',
         ]);
 
-        // dd($this->password);
         // Save the password
         $this->user->forceFill([
             'password' => Hash::make($this->password),
             'must_create_password' => false
         ])->save();
 
-        return redirect()->route('home');
+        // Log in the user
+        Auth::login($this->user);
+
+        // Redirect the user to the intended route or a default route if not available
+        return redirect()->intended(route('home', [], false));
     }
 
     public function render()
